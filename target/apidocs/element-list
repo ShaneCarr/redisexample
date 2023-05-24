@@ -1,3 +1,7 @@
 com.jersey
 com.jersey.api
+com.jersey.auth
+com.jersey.config
+com.jersey.model
+com.jersey.repository
 com.jersey.resources

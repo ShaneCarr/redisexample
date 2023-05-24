@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.jersey.resources","l":"HelloWorldResource"},{"p":"com.jersey","l":"Main"},{"p":"com.jersey.api","l":"Saying"}];updateSearchResults();

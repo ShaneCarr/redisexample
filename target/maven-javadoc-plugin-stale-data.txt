@@ -1,0 +1,90 @@
+@options
+@packages
+-classpath
+'/home/shane/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/3.0.4/jersey-media-json-jackson-3.0.4.jar:/home/shane/.m2/repository/org/glassfish/jersey/core/jersey-common/3.0.4/jersey-common-3.0.4.jar:/home/shane/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.jar:/home/shane/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/home/shane/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/3.0.4/jersey-entity-filtering-3.0.4.jar:/home/shane/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/home/shane/.m2/repository/com/fasterxml/jackson/module/jackson-module-jakarta-xmlbind-annotations/2.13.0/jackson-module-jakarta-xmlbind-annotations-2.13.0.jar:/home/shane/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.jar:/home/shane/.m2/repository/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar:/home/shane/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/3.0.4/jersey-hk2-3.0.4.jar:/home/shane/.m2/repository/org/glassfish/hk2/hk2-locator/3.0.1/hk2-locator-3.0.1.jar:/home/shane/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/3.0.1/aopalliance-repackaged-3.0.1.jar:/home/shane/.m2/repository/org/glassfish/hk2/hk2-api/3.0.1/hk2-api-3.0.1.jar:/home/shane/.m2/repository/org/glassfish/hk2/hk2-utils/3.0.1/hk2-utils-3.0.1.jar:/home/shane/.m2/repository/org/javassist/javassist/3.25.0-GA/javassist-3.25.0-GA.jar:/home/shane/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2.jar:/home/shane/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar:/home/shane/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/home/shane/.m2/repository/org/slf4j/slf4j-api/2.0.0-alpha7/slf4j-api-2.0.0-alpha7.jar:/home/shane/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.0.0/jakarta.ws.rs-api-3.0.0.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-server/11.0.8/jetty-server-11.0.8.jar:/home/shane/.m2/repository/org/eclipse/jetty/toolchain/jetty-jakarta-servlet-api/5.0.2/jetty-jakarta-servlet-api-5.0.2.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-http/11.0.8/jetty-http-11.0.8.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-util/11.0.8/jetty-util-11.0.8.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-io/11.0.8/jetty-io-11.0.8.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-servlet/11.0.8/jetty-servlet-11.0.8.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-security/11.0.8/jetty-security-11.0.8.jar:/home/shane/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/3.0.4/jersey-container-servlet-core-3.0.4.jar:/home/shane/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0.jar:/home/shane/.m2/repository/org/glassfish/jersey/core/jersey-server/3.0.4/jersey-server-3.0.4.jar:/home/shane/.m2/repository/org/glassfish/jersey/core/jersey-client/3.0.4/jersey-client-3.0.4.jar:/home/shane/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.0/jakarta.validation-api-3.0.0.jar:/home/shane/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.4/jackson-core-2.12.4.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'/home/shane/repo/testStorage2/src/main/java:/home/shane/repo/testStorage2/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/shane/repo/testStorage2/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'HelloWorld 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/shane/repo/testStorage2/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'HelloWorld 1.0-SNAPSHOT API'
+com.jersey
+com.jersey.resources
+com.jersey.api
+/home/shane/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/3.0.4/jersey-media-json-jackson-3.0.4.jar = 1684965661610
+/home/shane/.m2/repository/org/glassfish/jersey/core/jersey-common/3.0.4/jersey-common-3.0.4.jar = 1684965661790
+/home/shane/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.jar = 1684965661640
+/home/shane/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar = 1675988147793
+/home/shane/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/3.0.4/jersey-entity-filtering-3.0.4.jar = 1684965661660
+/home/shane/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar = 1684965661790
+/home/shane/.m2/repository/com/fasterxml/jackson/module/jackson-module-jakarta-xmlbind-annotations/2.13.0/jackson-module-jakarta-xmlbind-annotations-2.13.0.jar = 1684965661640
+/home/shane/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.jar = 1684965661690
+/home/shane/.m2/repository/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar = 1684965661700
+/home/shane/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/3.0.4/jersey-hk2-3.0.4.jar = 1684965661700
+/home/shane/.m2/repository/org/glassfish/hk2/hk2-locator/3.0.1/hk2-locator-3.0.1.jar = 1684965661730
+/home/shane/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/3.0.1/aopalliance-repackaged-3.0.1.jar = 1684965661960
+/home/shane/.m2/repository/org/glassfish/hk2/hk2-api/3.0.1/hk2-api-3.0.1.jar = 1684965661830
+/home/shane/.m2/repository/org/glassfish/hk2/hk2-utils/3.0.1/hk2-utils-3.0.1.jar = 1684965661780
+/home/shane/.m2/repository/org/javassist/javassist/3.25.0-GA/javassist-3.25.0-GA.jar = 1676581804303
+/home/shane/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2.jar = 1684965662080
+/home/shane/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar = 1684965661830
+/home/shane/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar = 1684965661830
+/home/shane/.m2/repository/org/slf4j/slf4j-api/2.0.0-alpha7/slf4j-api-2.0.0-alpha7.jar = 1684965661870
+/home/shane/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.0.0/jakarta.ws.rs-api-3.0.0.jar = 1684965662010
+/home/shane/.m2/repository/org/eclipse/jetty/jetty-server/11.0.8/jetty-server-11.0.8.jar = 1684965661970
+/home/shane/.m2/repository/org/eclipse/jetty/toolchain/jetty-jakarta-servlet-api/5.0.2/jetty-jakarta-servlet-api-5.0.2.jar = 1684965661980
+/home/shane/.m2/repository/org/eclipse/jetty/jetty-http/11.0.8/jetty-http-11.0.8.jar = 1684965662010
+/home/shane/.m2/repository/org/eclipse/jetty/jetty-util/11.0.8/jetty-util-11.0.8.jar = 1684965662040
+/home/shane/.m2/repository/org/eclipse/jetty/jetty-io/11.0.8/jetty-io-11.0.8.jar = 1684965662030
+/home/shane/.m2/repository/org/eclipse/jetty/jetty-servlet/11.0.8/jetty-servlet-11.0.8.jar = 1684965662060
+/home/shane/.m2/repository/org/eclipse/jetty/jetty-security/11.0.8/jetty-security-11.0.8.jar = 1684965662120
+/home/shane/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/3.0.4/jersey-container-servlet-core-3.0.4.jar = 1684965662070
+/home/shane/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0.jar = 1684965662110
+/home/shane/.m2/repository/org/glassfish/jersey/core/jersey-server/3.0.4/jersey-server-3.0.4.jar = 1684965662190
+/home/shane/.m2/repository/org/glassfish/jersey/core/jersey-client/3.0.4/jersey-client-3.0.4.jar = 1684965662170
+/home/shane/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.0/jakarta.validation-api-3.0.0.jar = 1684965662160
+/home/shane/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.4/jackson-core-2.12.4.jar = 1684965662340
+/home/shane/repo/testStorage2/src/main/java/log4j2.xml = 1684965478418
+/home/shane/repo/testStorage2/src/main/java = 1684965543299
+/home/shane/repo/testStorage2/target/generated-sources/annotations = 1684965662610
+/home/shane/repo/testStorage2/target/apidocs/module-search-index.js = 1684965834509
+/home/shane/repo/testStorage2/target/apidocs/script.js = 1684965834519
+/home/shane/repo/testStorage2/target/apidocs/package-search-index.zip = 1684965664744
+/home/shane/repo/testStorage2/target/apidocs/constant-values.html = 1684965664724
+/home/shane/repo/testStorage2/target/apidocs/member-search-index.js = 1684965834509
+/home/shane/repo/testStorage2/target/apidocs/index.html = 1684965834499
+/home/shane/repo/testStorage2/target/apidocs/tag-search-index.js = 1684965834509
+/home/shane/repo/testStorage2/target/apidocs/member-search-index.zip = 1684965664744
+/home/shane/repo/testStorage2/target/apidocs/overview-summary.html = 1684965834509
+/home/shane/repo/testStorage2/target/apidocs/jquery-ui.overrides.css = 1684965834519
+/home/shane/repo/testStorage2/target/apidocs/element-list = 1684965834479
+/home/shane/repo/testStorage2/target/apidocs/index-all.html = 1684965834509
+/home/shane/repo/testStorage2/target/apidocs/deprecated-list.html = 1684965664744
+/home/shane/repo/testStorage2/target/apidocs/allpackages-index.html = 1684965834509
+/home/shane/repo/testStorage2/target/apidocs/help-doc.html = 1684965834509
+/home/shane/repo/testStorage2/target/apidocs/allclasses.html = 1684965664744
+/home/shane/repo/testStorage2/target/apidocs/type-search-index.js = 1684965834509
+/home/shane/repo/testStorage2/target/apidocs/type-search-index.zip = 1684965664744
+/home/shane/repo/testStorage2/target/apidocs/allclasses-index.html = 1684965834509
+/home/shane/repo/testStorage2/target/apidocs/overview-tree.html = 1684965834499
+/home/shane/repo/testStorage2/target/apidocs/search.js = 1684965834519
+/home/shane/repo/testStorage2/target/apidocs/package-search-index.js = 1684965834509
+/home/shane/repo/testStorage2/target/apidocs/stylesheet.css = 1684965834519

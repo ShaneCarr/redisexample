@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.jersey"},{"l":"com.jersey.api"},{"l":"com.jersey.resources"}];updateSearchResults();

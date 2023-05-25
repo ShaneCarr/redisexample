@@ -1,0 +1,42 @@
+services:
+  veritas:
+    build: ../
+    depends_on:
+      - postgres_veritas
+    environment:
+      - YAMMER_DEV_MODE=TRUE
+      - GIT_SHA=none
+      - O365TOKENEXCHANGE_URL=http://localhost
+      - O365TOKENEXCHANGE_CLIENT_TIMEOUT=10s
+      - SCHEDULING_SERVICE_URL=http://localhost
+      - SCHEDULING_SERVICE_AUDIENCE=test
+      - AZURE_BOT_FRAMEWORK_URL=http://localhost
+      - VERITAS_AZURE_BOT_CLIENT_ID=123
+      - VERITAS_AZURE_BOT_CLIENT_SECRET=test
+      - VERITAS_REDIS_CRYPTO_KEY=test
+      - BOUNCIE_MASTER_URL=postgres_veritas
+      - DATABASE_NAME=test
+      - VERITAS_MASTER_DB_USER=test
+      - VERITAS_MASTER_DB_PASSWORD=test
+      - BOUNCIE_REPLICA_URL=postgres_veritas
+      - VERITAS_READONLY_DB_USER=test
+      - VERITAS_READONLY_DB_PASSWORD=test
+      - REGION=local
+      - HOST=local
+      - CELL=0
+      - STAMP_ID=1
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    links:
+      - "postgres_veritas:postgres"
+    volumes:
+      - ./logs:/home/app-user/logs
+  postgres_veritas:
+    image: postgres
+    environment:
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+      - POSTGRES_DB=test
+    ports:
+      - "5432:5432"

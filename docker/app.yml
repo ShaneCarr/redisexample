@@ -1,0 +1,46 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+      maxRequestHeaderSize: 16KiB
+  adminConnectors:
+    - type: http
+      port: 8081
+  requestLog:
+    appenders:
+      - type: file
+        currentLogFilename: logs/requests.log
+        archive: false
+        logFormat: "%a - - [%t{dd/MMM/yyyy:HH:mm:ss Z,GMT}] \"%r\" %s %b \"-\" \"%i{User-Agent}\" %D \"trace_id=%i{X-B3-TraceId};span_id=%i{X-B3-SpanId};x_request_id=%i{X-Request-Id}\""
+
+readWriteDatabase:
+  jdbcUrl: "jdbc:h2:mem:test2;MODE=PostgreSQL"
+  maximumPoolSize: 1
+  connectionTimeout: 300
+  minimumIdle: 1
+  maxLifetime: 3600000
+  validationQueryTimeout: 300
+  readOnly: false
+
+logging:
+  level: INFO
+  loggers:
+    com.yammer.veritas: INFO
+    liquibase:
+      level: INFO
+      appenders:
+        - type: console
+          target: stdout
+  appenders:
+    - type: logstash-file
+      threshold: INFO
+      currentLogFilename: logs/app.log
+      logFormat: '%-5level [%date{ISO8601}] [%thread] %mdc{X_Request_Id} %c: %msg%n'
+      timeZone: UTC
+      archive: false
+      customFields:
+        region: ${REGION}
+        docker_host: ${HOST}
+        git_sha: ${GIT_SHA}
+        cell: ${CELL}
+        source: veritas

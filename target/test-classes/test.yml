@@ -1,0 +1,21 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
+  requestLog:
+    appenders:
+      - type: file
+        currentLogFilename: logs/requests.log
+        archive: false
+
+readWriteDatabase:
+  jdbcUrl: jdbc:postgresql://localhost/primary
+  maximumPoolSize: 1
+  connectionTimeout: 300
+  minimumIdle: 1
+  maxLifetime: 3600000
+  validationQueryTimeout: 300
+  readOnly: false

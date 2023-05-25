@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="1" author="shcarr">
+        <createTable tableName="roster">
+            <column name="id" type="bigint"
+                    defaultValueComputed="next_global_id('veritas_meeting_instances_id_global_seq')">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="network_id" type="bigint"
+                    defaultValueComputed="next_global_id('veritas_meeting_instances_id_global_seq')"/>
+            <column name="rostername" type="varchar(500)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="timestamp" defaultValueComputed="now()">
+                <constraints nullable="false"/>
+            </column>
+            <column name="origin_id" type="varchar(500)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="origin_type" type="varchar(500)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <createTable tableName="roster_item">
+            <column name="id" type="bigint"
+                    defaultValueComputed="next_global_id('veritas_meeting_instances_id_global_seq')">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="remote_id" type="varchar(500)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="emailaddress" type="varchar(500)"/>
+            <column name="roster_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_roster" references="roster(id)"/>
+            </column>
+            <column name="dataprovider" type="varchar(500)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="varchar(500)"/>
+        </createTable>
+        <createIndex tableName="roster_item" indexName="idx_remote_id">
+            <column name="remote_id"/>
+        </createIndex>
+    </changeSet>
+</databaseChangeLog>

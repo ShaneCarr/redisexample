@@ -15,6 +15,7 @@ import io.dropwizard.client.JerseyClientBuilder;
 import io.dropwizard.core.Application;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
+import io.dropwizard.db.DataSourceFactory;
 import jakarta.ws.rs.client.Client;
 import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
 import org.slf4j.Logger;
@@ -25,7 +26,18 @@ public class App extends Application<ApplicationConfiguration> {
   private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
 
   @Override
-  public void initialize(Bootstrap<ApplicationConfiguration> b) {
+  public void initialize(Bootstrap<ApplicationConfiguration> bootstrap) {
+//    bootstrap.addBundle(new LiquibaseBundle<ApplicationConfiguration>() {
+//      @Override
+//      public DataSourceFactory getDataSourceFactory(ApplicationConfiguration configuration) {
+//        return configuration.getDataSourceFactory();
+//      }
+//
+//      @Override
+//      public LiquibaseFactory getLiquibaseFactory(ApplicationConfiguration configuration) {
+//        return configuration.getLiquibaseFactory();
+//      }
+//    });
   }
 
   @Override
@@ -57,6 +69,7 @@ public class App extends Application<ApplicationConfiguration> {
             .buildAuthFilter()));
     e.jersey().register(RolesAllowedDynamicFeature.class);
     e.jersey().register(new AuthValueFactoryProvider.Binder<>(User.class));
+
   }
 
   public static void main(String[] args) throws Exception {

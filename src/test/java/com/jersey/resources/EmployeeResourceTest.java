@@ -2,7 +2,8 @@ package com.jersey.resources;
 
 import jakarta.ws.rs.client.Entity;
 import jakarta.ws.rs.core.MediaType;
-import java.net.URISyntaxException;
+import java.util.Objects;
+
 import com.jersey.config.ApplicationConfiguration;
 import com.jersey.model.Employee;
 import jakarta.ws.rs.core.Response;
@@ -16,11 +17,12 @@ import org.junit.jupiter.api.Test;
 
 import static java.lang.String.format;
 import static org.junit.Assert.assertEquals;
-import com.google.common.io.Resources;
 public class EmployeeResourceTest {
 
-    private static final AppTestExtension appTestExtension = new AppTestExtension(Resources.getResource("test.yml").getPath());
 
+    private static final AppTestExtension appTestExtension = new AppTestExtension(
+            Objects.requireNonNull(EmployeeResourceTest.class.getClassLoader().getResource("test.yml")).getPath()
+    );
 
     static public DropwizardAppExtension<ApplicationConfiguration> app = appTestExtension.getApp();
 
@@ -44,6 +46,5 @@ public class EmployeeResourceTest {
 
         assertEquals(Response.Status.CREATED.getStatusCode(), response.getStatus());
         assertEquals("/employees/1", response.getLocation().getPath());
-
     }
 }

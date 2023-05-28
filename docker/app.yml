@@ -14,7 +14,16 @@ server:
         logFormat: "%a - - [%t{dd/MMM/yyyy:HH:mm:ss Z,GMT}] \"%r\" %s %b \"-\" \"%i{User-Agent}\" %D \"trace_id=%i{X-B3-TraceId};span_id=%i{X-B3-SpanId};x_request_id=%i{X-Request-Id}\""
 
 readWriteDatabase:
-  jdbcUrl: "jdbc:h2:mem:test2;MODE=PostgreSQL"
+  jdbcUrl: jdbc:postgresql://localhost/primary
+  maximumPoolSize: 1
+  connectionTimeout: 300
+  minimumIdle: 1
+  maxLifetime: 3600000
+  validationQueryTimeout: 300
+  readOnly: false
+
+readOnlyDatabase:
+  jdbcUrl: jdbc:postgresql://localhost/primary
   maximumPoolSize: 1
   connectionTimeout: 300
   minimumIdle: 1

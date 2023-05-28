@@ -43,10 +43,10 @@ public class EmployeeResource {
   }
   @POST
   public Response createEmployee(Employee employee) throws URISyntaxException {
-    Employee e = repository.getEmployee(employee.getId());
+    Employee e = repository.getEmployee(employee.id());
     if (e != null) {
-      repository.updateEmployee(employee.getId(), employee);
-      return Response.created(new URI("/employees/" + employee.getId()))
+      repository.updateEmployee(employee.id(), employee);
+      return Response.created(new URI("/employees/" + employee.id()))
               .build();
     } else {
       return Response.status(Status.NOT_FOUND).build();
@@ -55,10 +55,16 @@ public class EmployeeResource {
   @PUT
   @Path("/{id}")
   public Response updateEmployeeById(@PathParam("id") Integer id, Employee employee) {
-    Employee e = repository.getEmployee(employee.getId());
+    Employee e = repository.getEmployee(employee.id());
     if (e != null) {
-      employee.setId(id);
-      repository.updateEmployee(id, employee);
+      Employee updatedEmployee = new Employee.Builder()
+              .id(id)
+              .firstName(employee.firstName())
+              .lastName(employee.lastName())
+              .email(employee.email())
+              .build();
+
+      repository.updateEmployee(id, updatedEmployee);
       return Response.ok(employee).build();
     } else {
       return Response.status(Status.NOT_FOUND).build();

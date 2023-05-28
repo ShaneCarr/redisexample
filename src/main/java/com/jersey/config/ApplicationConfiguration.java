@@ -37,4 +37,61 @@ public class ApplicationConfiguration extends Configuration {
   public void setJerseyClientConfiguration(JerseyClientConfiguration jerseyClient) {
     this.jerseyClient = jerseyClient;
   }
+//
+//  @Valid
+//  @NotNull
+//  @JsonProperty("server")
+//  private ServerFactory serverFactory = new DefaultServerFactory();
+
+  @Valid
+  @NotNull
+  @JsonProperty("readWriteDatabase")
+  private ReadWriteDatabaseConfiguration readWriteDatabaseConfiguration;
+
+//  @Valid
+//  @NotNull
+//  @JsonProperty("logging")
+//  private LoggingConfiguration loggingConfiguration;
+//
+//  public ServerFactory getServerFactory() {
+//    return serverFactory;
+//  }
+
+//  public void setServerFactory(ServerFactory serverFactory) {
+//    this.serverFactory = serverFactory;
+//  }
+
+  public ReadWriteDatabaseConfiguration getReadWriteDatabaseConfiguration() {
+    return readWriteDatabaseConfiguration;
+  }
+
+  public void setReadWriteDatabaseConfiguration(
+          ReadWriteDatabaseConfiguration readWriteDatabaseConfiguration) {
+    this.readWriteDatabaseConfiguration = readWriteDatabaseConfiguration;
+  }
+
+  @Valid
+  @NotNull
+  @JsonProperty("readOnlyDatabase")
+  private ReadOnlyDatabaseConfiguration readOnlyDatabaseConfiguration;
+
+  @JsonProperty("readOnlyDatabase")
+  public ReadOnlyDatabaseConfiguration getReadOnlyDatabaseConfiguration() {
+    return readOnlyDatabaseConfiguration;
+  }
+
+  @JsonProperty("readOnlyDatabase")
+  public void setReadOnlyDatabaseConfiguration(ReadOnlyDatabaseConfiguration readOnlyDatabaseConfiguration) {
+    this.readOnlyDatabaseConfiguration = readOnlyDatabaseConfiguration;
+  }
+
+//
+//  public LoggingConfiguration getLoggingConfiguration() {
+//    return loggingConfiguration;
+//  }
+//
+//  public void setLoggingConfiguration(LoggingConfiguration loggingConfiguration) {
+//    this.loggingConfiguration = loggingConfiguration;
+//  }
+
 }

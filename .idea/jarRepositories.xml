@@ -32,6 +32,16 @@
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="bintray-dropwizard-maven" />
+      <option name="name" value="bintray" />
+      <option name="url" value="https://dl.bintray.com/dropwizard/maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dropwizard-releases" />
+      <option name="name" value="dropwizard-releases" />
+      <option name="url" value="https://oss.sonatype.org/content/repositories/releases/io/dropwizard/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="jcenter" />
       <option name="name" value="jcenter" />
       <option name="url" value="https://jcenter.bintray.com" />

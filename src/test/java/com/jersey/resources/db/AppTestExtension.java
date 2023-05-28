@@ -3,28 +3,37 @@ package com.jersey.resources.db;
 import com.jersey.App;
 import com.jersey.config.ApplicationConfiguration;
 
+//import io.dropwizard.testing.ConfigOverride;
 import io.dropwizard.testing.ConfigOverride;
 import io.dropwizard.testing.junit5.DropwizardAppExtension;
 import org.junit.jupiter.api.extension.*;
 import org.jdbi.v3.core.Jdbi;
+
+import java.util.function.Supplier;
 
 /*
 test extension
  */
 public class AppTestExtension implements BeforeAllCallback, AfterAllCallback, BeforeEachCallback, AfterEachCallback {
 
+    private final String configPath;
+
     public AppTestExtension(String configPath) {
+        db = PostgresTestContainer.create();
+        db.start();
+        Supplier<String> readOnlyJdbcUrlSupplier = db::jdbcUrl;
+
+        app = new DropwizardAppExtension<>(App.class,
+                configPath,
+                ConfigOverride.config("readOnlyDatabase.jdbcUrl", readOnlyJdbcUrlSupplier),
+                ConfigOverride.config("readWriteDatabase.jdbcUrl", readOnlyJdbcUrlSupplier)
+        );
         this.configPath = configPath;
     }
-    private String configPath;
 
-    private final PostgresTestContainer db = PostgresTestContainer.create();
+    private final DropwizardAppExtension<ApplicationConfiguration>  app;
 
-    final private DropwizardAppExtension<ApplicationConfiguration>  app = new DropwizardAppExtension<>(App.class,
-            this.configPath
-          //  ,ConfigOverride.config("readOnlyDatabase.jdbcUrl", db.jdbcUrl()),
-          //  ConfigOverride.config("readWriteDatabase.jdbcUrl", db.jdbcUrl())
-    );
+   private final PostgresTestContainer db;
 
     @Override
     public void beforeAll(ExtensionContext context) throws Exception {
@@ -46,10 +55,6 @@ public class AppTestExtension implements BeforeAllCallback, AfterAllCallback, Be
     public void afterEach(ExtensionContext context) throws Exception {
         // Perform any cleanup after each test
     }
-
-//    public DBI dbi() {
-//        return db.dbi();
-//    }
 
     public DropwizardAppExtension<ApplicationConfiguration> getApp() {
         return app;

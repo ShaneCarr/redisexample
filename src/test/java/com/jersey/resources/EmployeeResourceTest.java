@@ -47,4 +47,18 @@ public class EmployeeResourceTest {
         assertEquals(Response.Status.CREATED.getStatusCode(), response.getStatus());
         assertEquals("/employees/1", response.getLocation().getPath());
     }
+
+
+    @Test
+    public void getGroupMembers() {
+        Employee employee = new Employee(1, "John", "Doe", "john.doe@example.com");
+        UriBuilder uri = UriBuilder.fromUri(format("http://localhost:%d" + "/employees", app.getLocalPort()));
+        Response response = app.client().target(uri)
+                .request()
+                .post(Entity.entity(employee, MediaType.APPLICATION_JSON_TYPE));
+
+        assertEquals(Response.Status.CREATED.getStatusCode(), response.getStatus());
+        assertEquals("/employees/1", response.getLocation().getPath());
+    }
+
 }

@@ -20,19 +20,16 @@ readWriteDatabase:
   validationQueryTimeout: 300
   readOnly: false
 
-readOnlyDatabase:
-  jdbcUrl: jdbc:postgresql://localhost/primary
-  maximumPoolSize: 1
-  connectionTimeout: 300
-  minimumIdle: 1
-  maxLifetime: 3600000
-  validationQueryTimeout: 300
-  readOnly: false
-
 logging:
   level: VERBOSE
   appenders:
     - type: console
       target: stdout
   loggers:
-    com.example.mypackage: INFO
+    package com.jersey: INFO
+
+cosmosdb:
+  endpoint: your-cosmosdb-endpoint
+  key: your-cosmosdb-key
+  databaseName: roster_database
+  containerName: roster_container

@@ -3,11 +3,9 @@ package com.jersey.resources.db;
 import com.jersey.App;
 import com.jersey.config.ApplicationConfiguration;
 
-//import io.dropwizard.testing.ConfigOverride;
 import io.dropwizard.testing.ConfigOverride;
 import io.dropwizard.testing.junit5.DropwizardAppExtension;
 import org.junit.jupiter.api.extension.*;
-import org.jdbi.v3.core.Jdbi;
 
 import java.util.function.Supplier;
 

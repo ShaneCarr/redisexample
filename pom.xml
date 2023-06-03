@@ -3,12 +3,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
                              http://maven.apache.org/maven-v4_0_0.xsd">
     <repositories>
+
+<!--            <repository>-->
+<!--                <id>azure-cosmos</id>-->
+<!--                <name>Azure Cosmos DB SDK Repository</name>-->
+<!--                <url>https://repo.maven.apache.org/maven2/com/azure/</url>-->
+<!--            </repository>-->
+
         <repository>
             <id>dropwizard-releases</id>
             <url>https://oss.sonatype.org/content/repositories/releases/io/dropwizard/</url>
         </repository>
         <repository>
-
             <id>central</id>
             <name>Default Repository</name>
             <layout>default</layout>
@@ -62,6 +68,12 @@
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.azure</groupId>
+                <artifactId>azure-cosmos</artifactId>
+                <version>4.45.1</version>
+            </dependency>
+
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
@@ -212,6 +224,28 @@
     </dependencyManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-core</artifactId>
+            <version>${dropwizard.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-logging</artifactId>
+            <version>${dropwizard.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-validation</artifactId>
+            <version>${dropwizard.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-cosmos</artifactId>
+            <version>4.45.1</version>
+        </dependency>
 
         <dependency>
             <groupId>io.dropwizard</groupId>
@@ -263,7 +297,7 @@
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>postgresql</artifactId>
-            <version>1.18.1</version>
+            <version>1.18.3</version>
             <scope>test</scope>
             <exclusions>
                 <exclusion>

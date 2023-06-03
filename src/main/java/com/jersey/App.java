@@ -1,10 +1,17 @@
 package com.jersey;
 
+import com.azure.cosmos.CosmosClient;
+import com.azure.cosmos.CosmosContainer;
+import com.azure.cosmos.CosmosClientBuilder;
+//import com.azure.cosmos.CosmosContainerProperties;
+import com.azure.cosmos.CosmosDatabase;
+
 import com.jersey.auth.AppAuthorizer;
 import com.jersey.auth.AppBasicAuthenticator;
 import com.jersey.auth.User;
 import com.jersey.config.ApplicationConfiguration;
 import com.jersey.config.ApplicationHealthCheck;
+import com.jersey.cosmos.CosmosContainerFactory;
 import com.jersey.repository.EmployeeRepository;
 import com.jersey.resources.APIController;
 import com.jersey.resources.EmployeeResource;
@@ -15,7 +22,6 @@ import io.dropwizard.client.JerseyClientBuilder;
 import io.dropwizard.core.Application;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
-import io.dropwizard.db.DataSourceFactory;
 import jakarta.ws.rs.client.Client;
 import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
 import org.slf4j.Logger;
@@ -44,13 +50,28 @@ public class App extends Application<ApplicationConfiguration> {
   public void run(ApplicationConfiguration c, Environment e) throws Exception {
 
     LOGGER.info("Registering Jersey Client");
+
     final Client client = new JerseyClientBuilder(e)
             .using(c.getJerseyClientConfiguration())
             .build(getName());
     e.jersey().register(new APIController(client));
 
+
+    LOGGER.info("Registering cosmos");
+    // Create the CosmosClient using the configuration properties
+    CosmosClient cosmosClient = new CosmosClientBuilder()
+            .endpoint(c.getCosmosConfiguration().getEndpoint())
+            .key(c.getCosmosConfiguration().getKey())
+            .buildClient();
+
+    CosmosContainerFactory containerFactory = new CosmosContainerFactory(
+            cosmosClient,
+            c.getCosmosConfiguration().getDatabaseName(),
+            c.getCosmosConfiguration().getContainerName()
+    );
+
     LOGGER.info("Registering REST resources");
-    e.jersey().register(new EmployeeResource(e.getValidator(), new EmployeeRepository()));
+    e.jersey().register(new EmployeeResource(e.getValidator(), new EmployeeRepository(containerFactory.createContainer())));
 
     LOGGER.info("Registering Application Health Check");
     e.healthChecks().register("application", new ApplicationHealthCheck(client));
@@ -76,3 +97,4 @@ public class App extends Application<ApplicationConfiguration> {
     new App().run(args);
   }
 }
+

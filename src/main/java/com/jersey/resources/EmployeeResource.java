@@ -1,9 +1,13 @@
 package com.jersey.resources;
 
+import com.jersey.api.Audience.Audience;
+import com.jersey.cosmos.CreateAudience;
 import com.jersey.model.Employee;
 import com.jersey.repository.EmployeeRepository;
+import io.dropwizard.auth.Auth;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validator;
+import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
@@ -81,4 +85,17 @@ public class EmployeeResource {
       return Response.status(Status.NOT_FOUND).build();
     }
   }
+
+  @POST
+  @Consumes(MediaType.APPLICATION_JSON)
+  @Path("{networkId}/{userId}/audiences/ofGroup/{groupId}")
+  public Audience addAudience(
+         // @Auth final UserPrincipal userPrincipal,
+          @PathParam("networkId") long networkId,
+          @PathParam("userId") long userId,
+          CreateAudience createAudience) {
+    com.jersey.cosmos.Audience cosmosAudience = com.jersey.cosmos.Audience.fromCreateAudience(createAudience);
+    return repository.addAudience(cosmosAudience);
+  }
+
 }

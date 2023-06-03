@@ -85,7 +85,7 @@ public class ApplicationConfiguration extends Configuration {
     this.readOnlyDatabaseConfiguration = readOnlyDatabaseConfiguration;
   }
 
-//
+
 //  public LoggingConfiguration getLoggingConfiguration() {
 //    return loggingConfiguration;
 //  }
@@ -93,5 +93,20 @@ public class ApplicationConfiguration extends Configuration {
 //  public void setLoggingConfiguration(LoggingConfiguration loggingConfiguration) {
 //    this.loggingConfiguration = loggingConfiguration;
 //  }
+
+  @Valid
+  @NotNull
+  @JsonProperty("cosmosdb")
+  private CosmosDbConfiguration cosmosConfiguration;
+
+  @JsonProperty("cosmosdb")
+  public CosmosDbConfiguration getCosmosConfiguration() {
+    return cosmosConfiguration;
+  }
+
+  @JsonProperty("cosmosdb")
+  public void setCosmosConfiguration(CosmosDbConfiguration cosmosConfiguration) {
+    this.cosmosConfiguration = cosmosConfiguration;
+  }
 
 }

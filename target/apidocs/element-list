@@ -1,0 +1,9 @@
+com.jersey
+com.jersey.api
+com.jersey.api.Audience
+com.jersey.auth
+com.jersey.config
+com.jersey.cosmos
+com.jersey.model
+com.jersey.repository
+com.jersey.resources

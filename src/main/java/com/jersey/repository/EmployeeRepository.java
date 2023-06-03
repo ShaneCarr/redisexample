@@ -1,5 +1,7 @@
 package com.jersey.repository;
 
+import com.jersey.api.Audience.Audience;
+import com.jersey.cosmos.CreateAudience;
 import com.jersey.model.Employee;
 
 import java.util.ArrayList;
@@ -11,12 +13,28 @@ import java.time.Duration;
 import java.util.function.Supplier;
 import jakarta.ws.rs.WebApplicationException;
 import jakarta.ws.rs.core.Response;
+import org.checkerframework.checker.nullness.qual.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import com.azure.cosmos.CosmosContainer;
+import com.azure.cosmos.implementation.ConflictException;
+import com.azure.cosmos.implementation.NotFoundException;
+import com.azure.cosmos.models.CosmosBulkOperationResponse;
+import com.azure.cosmos.models.CosmosBulkOperations;
+import com.azure.cosmos.models.CosmosItemRequestOptions;
+import com.azure.cosmos.models.CosmosPatchOperations;
+import com.azure.cosmos.models.CosmosQueryRequestOptions;
+import com.azure.cosmos.models.PartitionKey;
+import com.azure.cosmos.models.SqlParameter;
 
 public class EmployeeRepository {
 
+  private CosmosContainer container;
+
+  public EmployeeRepository(CosmosContainer container) {
+
+    this.container = container;
+  }
   public static HashMap<Integer, Employee> employees = new HashMap<>();
 
   static {
@@ -53,14 +71,38 @@ public class EmployeeRepository {
           throw ex;
         }
         retryCounter++;
-//        try {
-//          //waitForNextRetry(retryCounter, delayBetweenRetries, withLinearBackoff);
-//        } catch (InterruptedException ignored) {
-//          // logger.error("RetryInterruptedException: ", ignored);
-//        }
       }
     }
   }
+
+  public Audience addAudience(///@NonNull UserPrincipal userPrincipal,
+                                     com.jersey.cosmos.Audience audience) {
+    //ensureAutorizationForAudienceMgmt(userPrincipal, networkId, leaderId);
+    return createAudience(audience);
+  }
+
+  public Audience createAudience(com.jersey.cosmos.Audience audience) {
+    var item = container.createItem(audience, audience.getPartitionKey(), new CosmosItemRequestOptions());
+
+    // stub to compile
+    return Audience.builder()
+            .id("audience123")
+            .displayName("My Audience")
+            .isDefaultAudience(true)
+            .transitiveMemberCount(1000L)
+            .build();
+
+////    try {
+////      return cosmosMetrics
+////              .observeCreate(() -> container.createItem(audience, audience.getPartitionKey(), new CosmosItemRequestOptions()))
+////              .getStatusCode();
+////    } catch (ConflictException e) {
+////      log.info("Audience{} already exists for leader {}", audience.getId(), audience.getLeaderYammerId(), e);
+////      return e.getStatusCode();
+////    }
+//    return 0;
+  }
+
 
   private static void waitForNextRetry(int numberOfTries, Duration delayBetweenRetries,
                                        boolean withLinearBackoff) throws InterruptedException {

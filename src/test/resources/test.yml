@@ -26,4 +26,10 @@ logging:
     - type: console
       target: stdout
   loggers:
-    com.example.mypackage: INFO
+    package com.jersey: INFO
+
+cosmosdb:
+  endpoint: your-cosmosdb-endpoint
+  key: your-cosmosdb-key
+  databaseName: your-database-name
+  containerName: your-container-name

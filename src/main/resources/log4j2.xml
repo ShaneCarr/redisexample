@@ -4,14 +4,14 @@
         <Console name="STDOUT" target="SYSTEM_OUT">
             <PatternLayout pattern="%m%n"/>
         </Console>
-        <File name="EngageEvents" fileName="logs/veritas.events">
+        <File name="EngageEvents" fileName="logs/employee.events">
             <PatternLayout>
                 <Pattern> %m%n</Pattern>
             </PatternLayout>
         </File>
     </Appenders>
     <Loggers>
-        <Logger name="Veritas">
+        <Logger name="Employee">
             <AppenderRef ref="EngageEvents"/>
         </Logger>
         <Root level="ERROR">

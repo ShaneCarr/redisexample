@@ -53,3 +53,9 @@ logging:
         git_sha: ${GIT_SHA}
         cell: ${CELL}
         source: veritas
+
+  cosmos:
+    endpoint: your-cosmosdb-endpoint
+    key: your-cosmosdb-key
+    databaseName: your-database-name
+    containerName: your-container-name

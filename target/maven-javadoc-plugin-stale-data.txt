@@ -1,21 +1,21 @@
 @options
 @packages
 -classpath
-'/home/shane/.m2/repository/io/dropwizard/dropwizard-core/4.0.0/dropwizard-core-4.0.0.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-jackson/4.0.0/dropwizard-jackson-4.0.0.jar:/home/shane/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.2/jackson-datatype-jsr310-2.14.2.jar:/home/shane/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.2/jackson-datatype-jdk8-2.14.2.jar:/home/shane/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.2/jackson-module-parameter-names-2.14.2.jar:/home/shane/.m2/repository/com/fasterxml/jackson/module/jackson-module-blackbird/2.14.2/jackson-module-blackbird-2.14.2.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-configuration/4.0.0/dropwizard-configuration-4.0.0.jar:/home/shane/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/home/shane/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-metrics/4.0.0/dropwizard-metrics-4.0.0.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-jersey/4.0.0/dropwizard-jersey-4.0.0.jar:/home/shane/.m2/repository/org/javassist/javassist/3.29.2-GA/javassist-3.29.2-GA.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-jersey3/4.2.18/metrics-jersey3-4.2.18.jar:/home/shane/.m2/repository/org/glassfish/hk2/hk2-api/3.0.3/hk2-api-3.0.3.jar:/home/shane/.m2/repository/org/glassfish/hk2/hk2-utils/3.0.3/hk2-utils-3.0.3.jar:/home/shane/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/3.0.3/aopalliance-repackaged-3.0.3.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-servlets/4.0.0/dropwizard-servlets-4.0.0.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-jetty/4.0.0/dropwizard-jetty-4.0.0.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-servlets/11.0.14/jetty-servlets-11.0.14.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-http/11.0.14/jetty-http-11.0.14.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-lifecycle/4.0.0/dropwizard-lifecycle-4.0.0.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-health/4.0.0/dropwizard-health-4.0.0.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-core/4.2.18/metrics-core-4.2.18.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-annotation/4.2.18/metrics-annotation-4.2.18.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-jetty11/4.2.18/metrics-jetty11-4.2.18.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-jvm/4.2.18/metrics-jvm-4.2.18.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-jmx/4.2.18/metrics-jmx-4.2.18.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-jakarta-servlets/4.2.18/metrics-jakarta-servlets-4.2.18.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-json/4.2.18/metrics-json-4.2.18.jar:/home/shane/.m2/repository/com/helger/profiler/1.1.1/profiler-1.1.1.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-healthchecks/4.2.18/metrics-healthchecks-4.2.18.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-request-logging/4.0.0/dropwizard-request-logging-4.0.0.jar:/home/shane/.m2/repository/ch/qos/logback/logback-access/1.4.6/logback-access-1.4.6.jar:/home/shane/.m2/repository/ch/qos/logback/logback-classic/1.4.6/logback-classic-1.4.6.jar:/home/shane/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/home/shane/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/home/shane/.m2/repository/org/checkerframework/checker-qual/3.32.0/checker-qual-3.32.0.jar:/home/shane/.m2/repository/jakarta/servlet/jakarta.servlet-api/5.0.0/jakarta.servlet-api-5.0.0.jar:/home/shane/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/shane/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.0.0/jakarta.ws.rs-api-3.0.0.jar:/home/shane/.m2/repository/net/sourceforge/argparse4j/argparse4j/0.9.0/argparse4j-0.9.0.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-security/11.0.14/jetty-security-11.0.14.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-server/11.0.14/jetty-server-11.0.14.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-servlet/11.0.14/jetty-servlet-11.0.14.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-util/11.0.14/jetty-util-11.0.14.jar:/home/shane/.m2/repository/org/eclipse/jetty/toolchain/setuid/jetty-setuid-java/1.0.4/jetty-setuid-java-1.0.4.jar:/home/shane/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1.MR/jakarta.inject-api-2.0.1.MR.jar:/home/shane/.m2/repository/org/glassfish/jersey/core/jersey-common/3.0.9/jersey-common-3.0.9.jar:/home/shane/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/home/shane/.m2/repository/org/glassfish/jersey/ext/jersey-bean-validation/3.0.9/jersey-bean-validation-3.0.9.jar:/home/shane/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/home/shane/.m2/repository/org/hibernate/validator/hibernate-validator/7.0.5.Final/hibernate-validator-7.0.5.Final.jar:/home/shane/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-logging/4.0.0/dropwizard-logging-4.0.0.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-util/4.0.0/dropwizard-util-4.0.0.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-logback/4.2.18/metrics-logback-4.2.18.jar:/home/shane/.m2/repository/org/slf4j/jul-to-slf4j/2.0.7/jul-to-slf4j-2.0.7.jar:/home/shane/.m2/repository/ch/qos/logback/logback-core/1.4.6/logback-core-1.4.6.jar:/home/shane/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/home/shane/.m2/repository/io/dropwizard/logback/logback-throttling-appender/1.1.9/logback-throttling-appender-1.1.9.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-validation/4.0.0/dropwizard-validation-4.0.0.jar:/home/shane/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/shane/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/shane/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/shane/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/shane/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/shane/.m2/repository/org/glassfish/jakarta.el/4.0.2/jakarta.el-4.0.2.jar:/home/shane/.m2/repository/jakarta/el/jakarta.el-api/4.0.0/jakarta.el-api-4.0.0.jar:/home/shane/.m2/repository/com/azure/azure-cosmos/4.45.1/azure-cosmos-4.45.1.jar:/home/shane/.m2/repository/com/azure/azure-core/1.39.0/azure-core-1.39.0.jar:/home/shane/.m2/repository/com/azure/azure-json/1.0.1/azure-json-1.0.1.jar:/home/shane/.m2/repository/io/projectreactor/reactor-core/3.4.27/reactor-core-3.4.27.jar:/home/shane/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/shane/.m2/repository/com/azure/azure-core-http-netty/1.13.3/azure-core-http-netty-1.13.3.jar:/home/shane/.m2/repository/io/netty/netty-handler/4.1.89.Final/netty-handler-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-common/4.1.89.Final/netty-common-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-resolver/4.1.89.Final/netty-resolver-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-transport/4.1.89.Final/netty-transport-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-handler-proxy/4.1.89.Final/netty-handler-proxy-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-codec-socks/4.1.89.Final/netty-codec-socks-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-buffer/4.1.89.Final/netty-buffer-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-codec/4.1.89.Final/netty-codec-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-codec-http/4.1.89.Final/netty-codec-http-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-codec-http2/4.1.89.Final/netty-codec-http2-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.89.Final/netty-transport-native-unix-common-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-transport-native-epoll/4.1.89.Final/netty-transport-native-epoll-4.1.89.Final-linux-x86_64.jar:/home/shane/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.89.Final/netty-transport-classes-epoll-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.89.Final/netty-transport-native-kqueue-4.1.89.Final-osx-x86_64.jar:/home/shane/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.89.Final/netty-transport-classes-kqueue-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final.jar:/home/shane/.m2/repository/io/netty/netty-tcnative-classes/2.0.56.Final/netty-tcnative-classes-2.0.56.Final.jar:/home/shane/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar:/home/shane/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar:/home/shane/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar:/home/shane/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar:/home/shane/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar:/home/shane/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.0.28/reactor-netty-http-1.0.28.jar:/home/shane/.m2/repository/io/netty/netty-resolver-dns/4.1.89.Final/netty-resolver-dns-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-codec-dns/4.1.89.Final/netty-codec-dns-4.1.89.Final.jar:/home/shane/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.89.Final/netty-resolver-dns-native-macos-4.1.89.Final-osx-x86_64.jar:/home/shane/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.89.Final/netty-resolver-dns-classes-macos-4.1.89.Final.jar:/home/shane/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.0.28/reactor-netty-core-1.0.28.jar:/home/shane/.m2/repository/com/fasterxml/jackson/module/jackson-module-afterburner/2.13.5/jackson-module-afterburner-2.13.5.jar:/home/shane/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/home/shane/.m2/repository/io/micrometer/micrometer-core/1.9.8/micrometer-core-1.9.8.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-jdbi3/4.0.0/dropwizard-jdbi3-4.0.0.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-db/4.0.0/dropwizard-db-4.0.0.jar:/home/shane/.m2/repository/org/apache/tomcat/tomcat-jdbc/10.1.7/tomcat-jdbc-10.1.7.jar:/home/shane/.m2/repository/org/apache/tomcat/tomcat-juli/10.1.7/tomcat-juli-10.1.7.jar:/home/shane/.m2/repository/org/jdbi/jdbi3-core/3.37.1/jdbi3-core-3.37.1.jar:/home/shane/.m2/repository/io/leangen/geantyref/geantyref/1.3.14/geantyref-1.3.14.jar:/home/shane/.m2/repository/org/jdbi/jdbi3-sqlobject/3.37.1/jdbi3-sqlobject-3.37.1.jar:/home/shane/.m2/repository/org/jdbi/jdbi3-guava/3.37.1/jdbi3-guava-3.37.1.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-jdbi3/4.2.18/metrics-jdbi3-4.2.18.jar:/home/shane/.m2/repository/org/liquibase/liquibase-core/4.8.0/liquibase-core-4.8.0.jar:/home/shane/.m2/repository/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-migrations/4.0.0/dropwizard-migrations-4.0.0.jar:/home/shane/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.jar:/home/shane/.m2/repository/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-client/4.0.0/dropwizard-client-4.0.0.jar:/home/shane/.m2/repository/org/glassfish/jersey/core/jersey-client/3.0.9/jersey-client-3.0.9.jar:/home/shane/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/home/shane/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/home/shane/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2.1/httpcore5-5.2.1.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-httpclient5/4.2.18/metrics-httpclient5-4.2.18.jar:/home/shane/.m2/repository/io/dropwizard/dropwizard-auth/4.0.0/dropwizard-auth-4.0.0.jar:/home/shane/.m2/repository/io/dropwizard/metrics/metrics-caffeine/4.2.18/metrics-caffeine-4.2.18.jar:/home/shane/.m2/repository/com/github/ben-manes/caffeine/caffeine/3.1.5/caffeine-3.1.5.jar:/home/shane/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.jar:/home/shane/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/3.0.9/jersey-container-servlet-core-3.0.9.jar:/home/shane/.m2/repository/org/glassfish/jersey/core/jersey-server/3.0.9/jersey-server-3.0.9.jar:/home/shane/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2.jar:/home/shane/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar:/home/shane/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/home/shane/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.14.2/jackson-dataformat-yaml-2.14.2.jar:/home/shane/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/home/shane/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.14.2/jackson-datatype-guava-2.14.2.jar:/home/shane/.m2/repository/com/fasterxml/jackson/jakarta/rs/jackson-jakarta-rs-json-provider/2.14.2/jackson-jakarta-rs-json-provider-2.14.2.jar:/home/shane/.m2/repository/com/fasterxml/jackson/jakarta/rs/jackson-jakarta-rs-base/2.14.2/jackson-jakarta-rs-base-2.14.2.jar:/home/shane/.m2/repository/com/fasterxml/jackson/module/jackson-module-jakarta-xmlbind-annotations/2.14.2/jackson-module-jakarta-xmlbind-annotations-2.14.2.jar:/home/shane/.m2/repository/org/eclipse/jetty/jetty-io/11.0.14/jetty-io-11.0.14.jar:/home/shane/.m2/repository/jakarta/activation/jakarta.activation-api/2.0.1/jakarta.activation-api-2.0.1.jar'
+'/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-core/4.0.0/dropwizard-core-4.0.0.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-jackson/4.0.0/dropwizard-jackson-4.0.0.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.2/jackson-datatype-jsr310-2.14.2.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.2/jackson-datatype-jdk8-2.14.2.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.2/jackson-module-parameter-names-2.14.2.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/module/jackson-module-blackbird/2.14.2/jackson-module-blackbird-2.14.2.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-configuration/4.0.0/dropwizard-configuration-4.0.0.jar:/Users/shanecarr/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/Users/shanecarr/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-metrics/4.0.0/dropwizard-metrics-4.0.0.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-jersey/4.0.0/dropwizard-jersey-4.0.0.jar:/Users/shanecarr/.m2/repository/org/javassist/javassist/3.29.2-GA/javassist-3.29.2-GA.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-jersey3/4.2.18/metrics-jersey3-4.2.18.jar:/Users/shanecarr/.m2/repository/org/glassfish/hk2/hk2-api/3.0.3/hk2-api-3.0.3.jar:/Users/shanecarr/.m2/repository/org/glassfish/hk2/hk2-utils/3.0.3/hk2-utils-3.0.3.jar:/Users/shanecarr/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/3.0.3/aopalliance-repackaged-3.0.3.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-servlets/4.0.0/dropwizard-servlets-4.0.0.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-jetty/4.0.0/dropwizard-jetty-4.0.0.jar:/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-servlets/11.0.14/jetty-servlets-11.0.14.jar:/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-http/11.0.14/jetty-http-11.0.14.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-lifecycle/4.0.0/dropwizard-lifecycle-4.0.0.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-health/4.0.0/dropwizard-health-4.0.0.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-core/4.2.18/metrics-core-4.2.18.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-annotation/4.2.18/metrics-annotation-4.2.18.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-jetty11/4.2.18/metrics-jetty11-4.2.18.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-jvm/4.2.18/metrics-jvm-4.2.18.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-jmx/4.2.18/metrics-jmx-4.2.18.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-jakarta-servlets/4.2.18/metrics-jakarta-servlets-4.2.18.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-json/4.2.18/metrics-json-4.2.18.jar:/Users/shanecarr/.m2/repository/com/helger/profiler/1.1.1/profiler-1.1.1.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-healthchecks/4.2.18/metrics-healthchecks-4.2.18.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-request-logging/4.0.0/dropwizard-request-logging-4.0.0.jar:/Users/shanecarr/.m2/repository/ch/qos/logback/logback-access/1.4.6/logback-access-1.4.6.jar:/Users/shanecarr/.m2/repository/ch/qos/logback/logback-classic/1.4.6/logback-classic-1.4.6.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/Users/shanecarr/.m2/repository/org/checkerframework/checker-qual/3.32.0/checker-qual-3.32.0.jar:/Users/shanecarr/.m2/repository/jakarta/servlet/jakarta.servlet-api/5.0.0/jakarta.servlet-api-5.0.0.jar:/Users/shanecarr/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/shanecarr/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.0.0/jakarta.ws.rs-api-3.0.0.jar:/Users/shanecarr/.m2/repository/net/sourceforge/argparse4j/argparse4j/0.9.0/argparse4j-0.9.0.jar:/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-security/11.0.14/jetty-security-11.0.14.jar:/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-server/11.0.14/jetty-server-11.0.14.jar:/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-servlet/11.0.14/jetty-servlet-11.0.14.jar:/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-util/11.0.14/jetty-util-11.0.14.jar:/Users/shanecarr/.m2/repository/org/eclipse/jetty/toolchain/setuid/jetty-setuid-java/1.0.4/jetty-setuid-java-1.0.4.jar:/Users/shanecarr/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1.MR/jakarta.inject-api-2.0.1.MR.jar:/Users/shanecarr/.m2/repository/org/glassfish/jersey/core/jersey-common/3.0.9/jersey-common-3.0.9.jar:/Users/shanecarr/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/Users/shanecarr/.m2/repository/org/glassfish/jersey/ext/jersey-bean-validation/3.0.9/jersey-bean-validation-3.0.9.jar:/Users/shanecarr/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/Users/shanecarr/.m2/repository/org/hibernate/validator/hibernate-validator/7.0.5.Final/hibernate-validator-7.0.5.Final.jar:/Users/shanecarr/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-logging/4.0.0/dropwizard-logging-4.0.0.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-util/4.0.0/dropwizard-util-4.0.0.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-logback/4.2.18/metrics-logback-4.2.18.jar:/Users/shanecarr/.m2/repository/org/slf4j/jul-to-slf4j/2.0.7/jul-to-slf4j-2.0.7.jar:/Users/shanecarr/.m2/repository/ch/qos/logback/logback-core/1.4.6/logback-core-1.4.6.jar:/Users/shanecarr/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/shanecarr/.m2/repository/io/dropwizard/logback/logback-throttling-appender/1.1.9/logback-throttling-appender-1.1.9.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-validation/4.0.0/dropwizard-validation-4.0.0.jar:/Users/shanecarr/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/shanecarr/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/shanecarr/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/shanecarr/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/shanecarr/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/shanecarr/.m2/repository/org/glassfish/jakarta.el/4.0.2/jakarta.el-4.0.2.jar:/Users/shanecarr/.m2/repository/jakarta/el/jakarta.el-api/4.0.0/jakarta.el-api-4.0.0.jar:/Users/shanecarr/.m2/repository/com/azure/azure-cosmos/4.45.1/azure-cosmos-4.45.1.jar:/Users/shanecarr/.m2/repository/com/azure/azure-core/1.39.0/azure-core-1.39.0.jar:/Users/shanecarr/.m2/repository/com/azure/azure-json/1.0.1/azure-json-1.0.1.jar:/Users/shanecarr/.m2/repository/io/projectreactor/reactor-core/3.4.27/reactor-core-3.4.27.jar:/Users/shanecarr/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/shanecarr/.m2/repository/com/azure/azure-core-http-netty/1.13.3/azure-core-http-netty-1.13.3.jar:/Users/shanecarr/.m2/repository/io/netty/netty-handler/4.1.89.Final/netty-handler-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-common/4.1.89.Final/netty-common-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-resolver/4.1.89.Final/netty-resolver-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-transport/4.1.89.Final/netty-transport-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-handler-proxy/4.1.89.Final/netty-handler-proxy-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-codec-socks/4.1.89.Final/netty-codec-socks-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-buffer/4.1.89.Final/netty-buffer-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-codec/4.1.89.Final/netty-codec-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-codec-http/4.1.89.Final/netty-codec-http-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-codec-http2/4.1.89.Final/netty-codec-http2-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.89.Final/netty-transport-native-unix-common-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-transport-native-epoll/4.1.89.Final/netty-transport-native-epoll-4.1.89.Final-linux-x86_64.jar:/Users/shanecarr/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.89.Final/netty-transport-classes-epoll-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.89.Final/netty-transport-native-kqueue-4.1.89.Final-osx-x86_64.jar:/Users/shanecarr/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.89.Final/netty-transport-classes-kqueue-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-classes/2.0.56.Final/netty-tcnative-classes-2.0.56.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar:/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar:/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar:/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar:/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar:/Users/shanecarr/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.0.28/reactor-netty-http-1.0.28.jar:/Users/shanecarr/.m2/repository/io/netty/netty-resolver-dns/4.1.89.Final/netty-resolver-dns-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-codec-dns/4.1.89.Final/netty-codec-dns-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.89.Final/netty-resolver-dns-native-macos-4.1.89.Final-osx-x86_64.jar:/Users/shanecarr/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.89.Final/netty-resolver-dns-classes-macos-4.1.89.Final.jar:/Users/shanecarr/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.0.28/reactor-netty-core-1.0.28.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/module/jackson-module-afterburner/2.13.5/jackson-module-afterburner-2.13.5.jar:/Users/shanecarr/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/shanecarr/.m2/repository/io/micrometer/micrometer-core/1.9.8/micrometer-core-1.9.8.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-jdbi3/4.0.0/dropwizard-jdbi3-4.0.0.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-db/4.0.0/dropwizard-db-4.0.0.jar:/Users/shanecarr/.m2/repository/org/apache/tomcat/tomcat-jdbc/10.1.7/tomcat-jdbc-10.1.7.jar:/Users/shanecarr/.m2/repository/org/apache/tomcat/tomcat-juli/10.1.7/tomcat-juli-10.1.7.jar:/Users/shanecarr/.m2/repository/org/jdbi/jdbi3-core/3.37.1/jdbi3-core-3.37.1.jar:/Users/shanecarr/.m2/repository/io/leangen/geantyref/geantyref/1.3.14/geantyref-1.3.14.jar:/Users/shanecarr/.m2/repository/org/jdbi/jdbi3-sqlobject/3.37.1/jdbi3-sqlobject-3.37.1.jar:/Users/shanecarr/.m2/repository/org/jdbi/jdbi3-guava/3.37.1/jdbi3-guava-3.37.1.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-jdbi3/4.2.18/metrics-jdbi3-4.2.18.jar:/Users/shanecarr/.m2/repository/org/liquibase/liquibase-core/4.8.0/liquibase-core-4.8.0.jar:/Users/shanecarr/.m2/repository/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-migrations/4.0.0/dropwizard-migrations-4.0.0.jar:/Users/shanecarr/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.jar:/Users/shanecarr/.m2/repository/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-client/4.0.0/dropwizard-client-4.0.0.jar:/Users/shanecarr/.m2/repository/org/glassfish/jersey/core/jersey-client/3.0.9/jersey-client-3.0.9.jar:/Users/shanecarr/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/shanecarr/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/shanecarr/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2.1/httpcore5-5.2.1.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-httpclient5/4.2.18/metrics-httpclient5-4.2.18.jar:/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-auth/4.0.0/dropwizard-auth-4.0.0.jar:/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-caffeine/4.2.18/metrics-caffeine-4.2.18.jar:/Users/shanecarr/.m2/repository/com/github/ben-manes/caffeine/caffeine/3.1.5/caffeine-3.1.5.jar:/Users/shanecarr/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.jar:/Users/shanecarr/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/3.0.9/jersey-container-servlet-core-3.0.9.jar:/Users/shanecarr/.m2/repository/org/glassfish/jersey/core/jersey-server/3.0.9/jersey-server-3.0.9.jar:/Users/shanecarr/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2.jar:/Users/shanecarr/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.14.2/jackson-dataformat-yaml-2.14.2.jar:/Users/shanecarr/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.14.2/jackson-datatype-guava-2.14.2.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/jakarta/rs/jackson-jakarta-rs-json-provider/2.14.2/jackson-jakarta-rs-json-provider-2.14.2.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/jakarta/rs/jackson-jakarta-rs-base/2.14.2/jackson-jakarta-rs-base-2.14.2.jar:/Users/shanecarr/.m2/repository/com/fasterxml/jackson/module/jackson-module-jakarta-xmlbind-annotations/2.14.2/jackson-module-jakarta-xmlbind-annotations-2.14.2.jar:/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-io/11.0.14/jetty-io-11.0.14.jar:/Users/shanecarr/.m2/repository/jakarta/activation/jakarta.activation-api/2.0.1/jakarta.activation-api-2.0.1.jar'
 -encoding
 'UTF-8'
 -protected
 -source
 '17'
 -sourcepath
-'/home/shane/repo/testStorage2/src/main/java:/home/shane/repo/testStorage2/target/generated-sources/annotations'
+'/Users/shanecarr/repo/redisexample/src/main/java:/Users/shanecarr/repo/redisexample/target/generated-sources/annotations'
 -author
 -bottom
 'Copyright &#169; 2023. All rights reserved.'
 -charset
 'UTF-8'
 -d
-'/home/shane/repo/testStorage2/target/apidocs'
+'/Users/shanecarr/repo/redisexample/target/apidocs'
 -docencoding
 'UTF-8'
 -doctitle
@@ -24,174 +24,174 @@
 -version
 -windowtitle
 'HelloWorld 1.0-SNAPSHOT API'
-com.jersey
-com.jersey.auth
 com.jersey.repository
-com.jersey.resources
 com.jersey.config
+com.jersey.auth
+com.jersey.resources
 com.jersey.cosmos
+com.jersey
 com.jersey.model
-com.jersey.api.Audience
 com.jersey.api
-/home/shane/.m2/repository/io/dropwizard/dropwizard-core/4.0.0/dropwizard-core-4.0.0.jar = 1685147814704
-/home/shane/.m2/repository/io/dropwizard/dropwizard-jackson/4.0.0/dropwizard-jackson-4.0.0.jar = 1685147814774
-/home/shane/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.2/jackson-datatype-jsr310-2.14.2.jar = 1685147815459
-/home/shane/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.2/jackson-datatype-jdk8-2.14.2.jar = 1685147815529
-/home/shane/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.2/jackson-module-parameter-names-2.14.2.jar = 1685147815599
-/home/shane/.m2/repository/com/fasterxml/jackson/module/jackson-module-blackbird/2.14.2/jackson-module-blackbird-2.14.2.jar = 1685147815669
-/home/shane/.m2/repository/io/dropwizard/dropwizard-configuration/4.0.0/dropwizard-configuration-4.0.0.jar = 1685147816019
-/home/shane/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar = 1685147816109
-/home/shane/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar = 1685147816209
-/home/shane/.m2/repository/io/dropwizard/dropwizard-metrics/4.0.0/dropwizard-metrics-4.0.0.jar = 1685147816819
-/home/shane/.m2/repository/io/dropwizard/dropwizard-jersey/4.0.0/dropwizard-jersey-4.0.0.jar = 1685147816899
-/home/shane/.m2/repository/org/javassist/javassist/3.29.2-GA/javassist-3.29.2-GA.jar = 1685147817249
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-jersey3/4.2.18/metrics-jersey3-4.2.18.jar = 1685147817319
-/home/shane/.m2/repository/org/glassfish/hk2/hk2-api/3.0.3/hk2-api-3.0.3.jar = 1685147817739
-/home/shane/.m2/repository/org/glassfish/hk2/hk2-utils/3.0.3/hk2-utils-3.0.3.jar = 1685147817829
-/home/shane/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/3.0.3/aopalliance-repackaged-3.0.3.jar = 1685147817889
-/home/shane/.m2/repository/io/dropwizard/dropwizard-servlets/4.0.0/dropwizard-servlets-4.0.0.jar = 1685147818149
-/home/shane/.m2/repository/io/dropwizard/dropwizard-jetty/4.0.0/dropwizard-jetty-4.0.0.jar = 1685147818229
-/home/shane/.m2/repository/org/eclipse/jetty/jetty-servlets/11.0.14/jetty-servlets-11.0.14.jar = 1685147818319
-/home/shane/.m2/repository/org/eclipse/jetty/jetty-http/11.0.14/jetty-http-11.0.14.jar = 1685147818409
-/home/shane/.m2/repository/io/dropwizard/dropwizard-lifecycle/4.0.0/dropwizard-lifecycle-4.0.0.jar = 1685147818469
-/home/shane/.m2/repository/io/dropwizard/dropwizard-health/4.0.0/dropwizard-health-4.0.0.jar = 1685147818539
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-core/4.2.18/metrics-core-4.2.18.jar = 1685147818619
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-annotation/4.2.18/metrics-annotation-4.2.18.jar = 1685147818689
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-jetty11/4.2.18/metrics-jetty11-4.2.18.jar = 1685147818789
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-jvm/4.2.18/metrics-jvm-4.2.18.jar = 1685147818849
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-jmx/4.2.18/metrics-jmx-4.2.18.jar = 1685147818929
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-jakarta-servlets/4.2.18/metrics-jakarta-servlets-4.2.18.jar = 1685147818989
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-json/4.2.18/metrics-json-4.2.18.jar = 1685147819049
-/home/shane/.m2/repository/com/helger/profiler/1.1.1/profiler-1.1.1.jar = 1685147819129
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-healthchecks/4.2.18/metrics-healthchecks-4.2.18.jar = 1685147819189
-/home/shane/.m2/repository/io/dropwizard/dropwizard-request-logging/4.0.0/dropwizard-request-logging-4.0.0.jar = 1685147819259
-/home/shane/.m2/repository/ch/qos/logback/logback-access/1.4.6/logback-access-1.4.6.jar = 1685147819349
-/home/shane/.m2/repository/ch/qos/logback/logback-classic/1.4.6/logback-classic-1.4.6.jar = 1685147819499
-/home/shane/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar = 1685147819569
-/home/shane/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar = 1685147819799
-/home/shane/.m2/repository/org/checkerframework/checker-qual/3.32.0/checker-qual-3.32.0.jar = 1685147819909
-/home/shane/.m2/repository/jakarta/servlet/jakarta.servlet-api/5.0.0/jakarta.servlet-api-5.0.0.jar = 1685147820009
-/home/shane/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar = 1685147820079
-/home/shane/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.0.0/jakarta.ws.rs-api-3.0.0.jar = 1685147820169
-/home/shane/.m2/repository/net/sourceforge/argparse4j/argparse4j/0.9.0/argparse4j-0.9.0.jar = 1685147820249
-/home/shane/.m2/repository/org/eclipse/jetty/jetty-security/11.0.14/jetty-security-11.0.14.jar = 1685147820399
-/home/shane/.m2/repository/org/eclipse/jetty/jetty-server/11.0.14/jetty-server-11.0.14.jar = 1685147820569
-/home/shane/.m2/repository/org/eclipse/jetty/jetty-servlet/11.0.14/jetty-servlet-11.0.14.jar = 1685147820649
-/home/shane/.m2/repository/org/eclipse/jetty/jetty-util/11.0.14/jetty-util-11.0.14.jar = 1685147820809
-/home/shane/.m2/repository/org/eclipse/jetty/toolchain/setuid/jetty-setuid-java/1.0.4/jetty-setuid-java-1.0.4.jar = 1685147820869
-/home/shane/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1.MR/jakarta.inject-api-2.0.1.MR.jar = 1685147820939
-/home/shane/.m2/repository/org/glassfish/jersey/core/jersey-common/3.0.9/jersey-common-3.0.9.jar = 1685147821129
-/home/shane/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar = 1685147821189
-/home/shane/.m2/repository/org/glassfish/jersey/ext/jersey-bean-validation/3.0.9/jersey-bean-validation-3.0.9.jar = 1685147821259
-/home/shane/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar = 1685147821339
-/home/shane/.m2/repository/org/hibernate/validator/hibernate-validator/7.0.5.Final/hibernate-validator-7.0.5.Final.jar = 1685147821509
-/home/shane/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar = 1685147821579
-/home/shane/.m2/repository/io/dropwizard/dropwizard-logging/4.0.0/dropwizard-logging-4.0.0.jar = 1685147816269
-/home/shane/.m2/repository/io/dropwizard/dropwizard-util/4.0.0/dropwizard-util-4.0.0.jar = 1685147821939
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-logback/4.2.18/metrics-logback-4.2.18.jar = 1685147816329
-/home/shane/.m2/repository/org/slf4j/jul-to-slf4j/2.0.7/jul-to-slf4j-2.0.7.jar = 1685147816389
-/home/shane/.m2/repository/ch/qos/logback/logback-core/1.4.6/logback-core-1.4.6.jar = 1685147816499
-/home/shane/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar = 1685147816559
-/home/shane/.m2/repository/io/dropwizard/logback/logback-throttling-appender/1.1.9/logback-throttling-appender-1.1.9.jar = 1685147816629
-/home/shane/.m2/repository/io/dropwizard/dropwizard-validation/4.0.0/dropwizard-validation-4.0.0.jar = 1685147815739
-/home/shane/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar = 1685147815809
-/home/shane/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar = 1685147815049
-/home/shane/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar = 1685147815119
-/home/shane/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar = 1685147815209
-/home/shane/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar = 1685147815309
-/home/shane/.m2/repository/org/glassfish/jakarta.el/4.0.2/jakarta.el-4.0.2.jar = 1685147815879
-/home/shane/.m2/repository/jakarta/el/jakarta.el-api/4.0.0/jakarta.el-api-4.0.0.jar = 1685147815959
-/home/shane/.m2/repository/com/azure/azure-cosmos/4.45.1/azure-cosmos-4.45.1.jar = 1685413957932
-/home/shane/.m2/repository/com/azure/azure-core/1.39.0/azure-core-1.39.0.jar = 1685413957962
-/home/shane/.m2/repository/com/azure/azure-json/1.0.1/azure-json-1.0.1.jar = 1685413957862
-/home/shane/.m2/repository/io/projectreactor/reactor-core/3.4.27/reactor-core-3.4.27.jar = 1685413957962
-/home/shane/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar = 1685413293887
-/home/shane/.m2/repository/com/azure/azure-core-http-netty/1.13.3/azure-core-http-netty-1.13.3.jar = 1685413957822
-/home/shane/.m2/repository/io/netty/netty-handler/4.1.89.Final/netty-handler-4.1.89.Final.jar = 1685413957902
-/home/shane/.m2/repository/io/netty/netty-common/4.1.89.Final/netty-common-4.1.89.Final.jar = 1685413958082
-/home/shane/.m2/repository/io/netty/netty-resolver/4.1.89.Final/netty-resolver-4.1.89.Final.jar = 1685413957942
-/home/shane/.m2/repository/io/netty/netty-transport/4.1.89.Final/netty-transport-4.1.89.Final.jar = 1685413957982
-/home/shane/.m2/repository/io/netty/netty-handler-proxy/4.1.89.Final/netty-handler-proxy-4.1.89.Final.jar = 1685413957992
-/home/shane/.m2/repository/io/netty/netty-codec-socks/4.1.89.Final/netty-codec-socks-4.1.89.Final.jar = 1685413958012
-/home/shane/.m2/repository/io/netty/netty-buffer/4.1.89.Final/netty-buffer-4.1.89.Final.jar = 1685413958002
-/home/shane/.m2/repository/io/netty/netty-codec/4.1.89.Final/netty-codec-4.1.89.Final.jar = 1685413958022
-/home/shane/.m2/repository/io/netty/netty-codec-http/4.1.89.Final/netty-codec-http-4.1.89.Final.jar = 1685413958062
-/home/shane/.m2/repository/io/netty/netty-codec-http2/4.1.89.Final/netty-codec-http2-4.1.89.Final.jar = 1685413958422
-/home/shane/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.89.Final/netty-transport-native-unix-common-4.1.89.Final.jar = 1685413958062
-/home/shane/.m2/repository/io/netty/netty-transport-native-epoll/4.1.89.Final/netty-transport-native-epoll-4.1.89.Final-linux-x86_64.jar = 1685413958062
-/home/shane/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.89.Final/netty-transport-classes-epoll-4.1.89.Final.jar = 1685413958082
-/home/shane/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.89.Final/netty-transport-native-kqueue-4.1.89.Final-osx-x86_64.jar = 1685413958092
-/home/shane/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.89.Final/netty-transport-classes-kqueue-4.1.89.Final.jar = 1685413958102
-/home/shane/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final.jar = 1685413958122
-/home/shane/.m2/repository/io/netty/netty-tcnative-classes/2.0.56.Final/netty-tcnative-classes-2.0.56.Final.jar = 1685413958122
-/home/shane/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar = 1685413958372
-/home/shane/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar = 1685413958172
-/home/shane/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar = 1685413958542
-/home/shane/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar = 1685413958182
-/home/shane/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar = 1685413958262
-/home/shane/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.0.28/reactor-netty-http-1.0.28.jar = 1685413958232
-/home/shane/.m2/repository/io/netty/netty-resolver-dns/4.1.89.Final/netty-resolver-dns-4.1.89.Final.jar = 1685413958272
-/home/shane/.m2/repository/io/netty/netty-codec-dns/4.1.89.Final/netty-codec-dns-4.1.89.Final.jar = 1685413958292
-/home/shane/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.89.Final/netty-resolver-dns-native-macos-4.1.89.Final-osx-x86_64.jar = 1685413958312
-/home/shane/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.89.Final/netty-resolver-dns-classes-macos-4.1.89.Final.jar = 1685413958322
-/home/shane/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.0.28/reactor-netty-core-1.0.28.jar = 1685413958362
-/home/shane/.m2/repository/com/fasterxml/jackson/module/jackson-module-afterburner/2.13.5/jackson-module-afterburner-2.13.5.jar = 1681362406474
-/home/shane/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar = 1676266457532
-/home/shane/.m2/repository/io/micrometer/micrometer-core/1.9.8/micrometer-core-1.9.8.jar = 1685413958402
-/home/shane/.m2/repository/io/dropwizard/dropwizard-jdbi3/4.0.0/dropwizard-jdbi3-4.0.0.jar = 1685147821649
-/home/shane/.m2/repository/io/dropwizard/dropwizard-db/4.0.0/dropwizard-db-4.0.0.jar = 1685147821709
-/home/shane/.m2/repository/org/apache/tomcat/tomcat-jdbc/10.1.7/tomcat-jdbc-10.1.7.jar = 1685147821789
-/home/shane/.m2/repository/org/apache/tomcat/tomcat-juli/10.1.7/tomcat-juli-10.1.7.jar = 1685147821879
-/home/shane/.m2/repository/org/jdbi/jdbi3-core/3.37.1/jdbi3-core-3.37.1.jar = 1685147822079
-/home/shane/.m2/repository/io/leangen/geantyref/geantyref/1.3.14/geantyref-1.3.14.jar = 1685147822149
-/home/shane/.m2/repository/org/jdbi/jdbi3-sqlobject/3.37.1/jdbi3-sqlobject-3.37.1.jar = 1685147822229
-/home/shane/.m2/repository/org/jdbi/jdbi3-guava/3.37.1/jdbi3-guava-3.37.1.jar = 1685147822319
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-jdbi3/4.2.18/metrics-jdbi3-4.2.18.jar = 1685147822379
-/home/shane/.m2/repository/org/liquibase/liquibase-core/4.8.0/liquibase-core-4.8.0.jar = 1685147822979
-/home/shane/.m2/repository/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar = 1685147823049
-/home/shane/.m2/repository/io/dropwizard/dropwizard-migrations/4.0.0/dropwizard-migrations-4.0.0.jar = 1685147823119
-/home/shane/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.jar = 1685147823269
-/home/shane/.m2/repository/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar = 1685147823329
-/home/shane/.m2/repository/io/dropwizard/dropwizard-client/4.0.0/dropwizard-client-4.0.0.jar = 1685147823399
-/home/shane/.m2/repository/org/glassfish/jersey/core/jersey-client/3.0.9/jersey-client-3.0.9.jar = 1685147823489
-/home/shane/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar = 1685147823629
-/home/shane/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar = 1685147823709
-/home/shane/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2.1/httpcore5-5.2.1.jar = 1685147823849
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-httpclient5/4.2.18/metrics-httpclient5-4.2.18.jar = 1685147823919
-/home/shane/.m2/repository/io/dropwizard/dropwizard-auth/4.0.0/dropwizard-auth-4.0.0.jar = 1685147823989
-/home/shane/.m2/repository/io/dropwizard/metrics/metrics-caffeine/4.2.18/metrics-caffeine-4.2.18.jar = 1685147824049
-/home/shane/.m2/repository/com/github/ben-manes/caffeine/caffeine/3.1.5/caffeine-3.1.5.jar = 1685147824159
-/home/shane/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.jar = 1685147824229
-/home/shane/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/3.0.9/jersey-container-servlet-core-3.0.9.jar = 1685147824299
-/home/shane/.m2/repository/org/glassfish/jersey/core/jersey-server/3.0.9/jersey-server-3.0.9.jar = 1685147824419
-/home/shane/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2.jar = 1685147824659
-/home/shane/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar = 1685147824769
-/home/shane/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar = 1685147824859
-/home/shane/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.14.2/jackson-dataformat-yaml-2.14.2.jar = 1685147824919
-/home/shane/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar = 1685147825009
-/home/shane/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.14.2/jackson-datatype-guava-2.14.2.jar = 1685147815379
-/home/shane/.m2/repository/com/fasterxml/jackson/jakarta/rs/jackson-jakarta-rs-json-provider/2.14.2/jackson-jakarta-rs-json-provider-2.14.2.jar = 1685147817399
-/home/shane/.m2/repository/com/fasterxml/jackson/jakarta/rs/jackson-jakarta-rs-base/2.14.2/jackson-jakarta-rs-base-2.14.2.jar = 1685147817479
-/home/shane/.m2/repository/com/fasterxml/jackson/module/jackson-module-jakarta-xmlbind-annotations/2.14.2/jackson-module-jakarta-xmlbind-annotations-2.14.2.jar = 1685147817549
-/home/shane/.m2/repository/org/eclipse/jetty/jetty-io/11.0.14/jetty-io-11.0.14.jar = 1685147818069
-/home/shane/.m2/repository/jakarta/activation/jakarta.activation-api/2.0.1/jakarta.activation-api-2.0.1.jar = 1684972119776
-/home/shane/repo/testStorage2/src/main/java/log4j2.xml = 1684965478418
-/home/shane/repo/testStorage2/src/main/java = 1684965543299
-/home/shane/repo/testStorage2/target/generated-sources/annotations = 1685415097705
-/home/shane/repo/testStorage2/target/apidocs/module-search-index.js = 1685737591185
-/home/shane/repo/testStorage2/target/apidocs/script.js = 1685737591205
-/home/shane/repo/testStorage2/target/apidocs/member-search-index.js = 1685737591185
-/home/shane/repo/testStorage2/target/apidocs/index.html = 1685737591175
-/home/shane/repo/testStorage2/target/apidocs/tag-search-index.js = 1685737591185
-/home/shane/repo/testStorage2/target/apidocs/overview-summary.html = 1685737591205
-/home/shane/repo/testStorage2/target/apidocs/jquery-ui.overrides.css = 1685737591215
-/home/shane/repo/testStorage2/target/apidocs/element-list = 1685737591105
-/home/shane/repo/testStorage2/target/apidocs/index-all.html = 1685737591205
-/home/shane/repo/testStorage2/target/apidocs/allpackages-index.html = 1685737591185
-/home/shane/repo/testStorage2/target/apidocs/help-doc.html = 1685737591205
-/home/shane/repo/testStorage2/target/apidocs/type-search-index.js = 1685737591185
-/home/shane/repo/testStorage2/target/apidocs/allclasses-index.html = 1685737591185
-/home/shane/repo/testStorage2/target/apidocs/overview-tree.html = 1685737591175
-/home/shane/repo/testStorage2/target/apidocs/search.js = 1685737591205
-/home/shane/repo/testStorage2/target/apidocs/package-search-index.js = 1685737591185
-/home/shane/repo/testStorage2/target/apidocs/stylesheet.css = 1685737591205
+com.jersey.api.Audience
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-core/4.0.0/dropwizard-core-4.0.0.jar = 1685757999275
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-jackson/4.0.0/dropwizard-jackson-4.0.0.jar = 1685757999410
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.2/jackson-datatype-jsr310-2.14.2.jar = 1685757999302
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.2/jackson-datatype-jdk8-2.14.2.jar = 1685757999413
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.2/jackson-module-parameter-names-2.14.2.jar = 1685757999409
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/module/jackson-module-blackbird/2.14.2/jackson-module-blackbird-2.14.2.jar = 1685757999415
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-configuration/4.0.0/dropwizard-configuration-4.0.0.jar = 1685757999322
+/Users/shanecarr/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar = 1672801685945
+/Users/shanecarr/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar = 1672709649787
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-metrics/4.0.0/dropwizard-metrics-4.0.0.jar = 1685757999367
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-jersey/4.0.0/dropwizard-jersey-4.0.0.jar = 1685757999389
+/Users/shanecarr/.m2/repository/org/javassist/javassist/3.29.2-GA/javassist-3.29.2-GA.jar = 1672801709123
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-jersey3/4.2.18/metrics-jersey3-4.2.18.jar = 1685757999448
+/Users/shanecarr/.m2/repository/org/glassfish/hk2/hk2-api/3.0.3/hk2-api-3.0.3.jar = 1685757999453
+/Users/shanecarr/.m2/repository/org/glassfish/hk2/hk2-utils/3.0.3/hk2-utils-3.0.3.jar = 1685757999453
+/Users/shanecarr/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/3.0.3/aopalliance-repackaged-3.0.3.jar = 1685757999463
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-servlets/4.0.0/dropwizard-servlets-4.0.0.jar = 1685757999479
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-jetty/4.0.0/dropwizard-jetty-4.0.0.jar = 1685757999480
+/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-servlets/11.0.14/jetty-servlets-11.0.14.jar = 1685757999490
+/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-http/11.0.14/jetty-http-11.0.14.jar = 1685757999517
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-lifecycle/4.0.0/dropwizard-lifecycle-4.0.0.jar = 1685757999506
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-health/4.0.0/dropwizard-health-4.0.0.jar = 1685757999497
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-core/4.2.18/metrics-core-4.2.18.jar = 1685757999504
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-annotation/4.2.18/metrics-annotation-4.2.18.jar = 1685757999517
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-jetty11/4.2.18/metrics-jetty11-4.2.18.jar = 1685757999519
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-jvm/4.2.18/metrics-jvm-4.2.18.jar = 1685757999526
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-jmx/4.2.18/metrics-jmx-4.2.18.jar = 1685757999528
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-jakarta-servlets/4.2.18/metrics-jakarta-servlets-4.2.18.jar = 1685757999537
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-json/4.2.18/metrics-json-4.2.18.jar = 1685757999538
+/Users/shanecarr/.m2/repository/com/helger/profiler/1.1.1/profiler-1.1.1.jar = 1672801688871
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-healthchecks/4.2.18/metrics-healthchecks-4.2.18.jar = 1685757999547
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-request-logging/4.0.0/dropwizard-request-logging-4.0.0.jar = 1685757999547
+/Users/shanecarr/.m2/repository/ch/qos/logback/logback-access/1.4.6/logback-access-1.4.6.jar = 1685757999562
+/Users/shanecarr/.m2/repository/ch/qos/logback/logback-classic/1.4.6/logback-classic-1.4.6.jar = 1685757999574
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar = 1685757999564
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar = 1685757999616
+/Users/shanecarr/.m2/repository/org/checkerframework/checker-qual/3.32.0/checker-qual-3.32.0.jar = 1685757999586
+/Users/shanecarr/.m2/repository/jakarta/servlet/jakarta.servlet-api/5.0.0/jakarta.servlet-api-5.0.0.jar = 1685757999595
+/Users/shanecarr/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar = 1685757999593
+/Users/shanecarr/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.0.0/jakarta.ws.rs-api-3.0.0.jar = 1685757999596
+/Users/shanecarr/.m2/repository/net/sourceforge/argparse4j/argparse4j/0.9.0/argparse4j-0.9.0.jar = 1672801689269
+/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-security/11.0.14/jetty-security-11.0.14.jar = 1685757999618
+/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-server/11.0.14/jetty-server-11.0.14.jar = 1685757999639
+/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-servlet/11.0.14/jetty-servlet-11.0.14.jar = 1685757999624
+/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-util/11.0.14/jetty-util-11.0.14.jar = 1685757999651
+/Users/shanecarr/.m2/repository/org/eclipse/jetty/toolchain/setuid/jetty-setuid-java/1.0.4/jetty-setuid-java-1.0.4.jar = 1672801689574
+/Users/shanecarr/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1.MR/jakarta.inject-api-2.0.1.MR.jar = 1685757999650
+/Users/shanecarr/.m2/repository/org/glassfish/jersey/core/jersey-common/3.0.9/jersey-common-3.0.9.jar = 1685757999721
+/Users/shanecarr/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar = 1672801602191
+/Users/shanecarr/.m2/repository/org/glassfish/jersey/ext/jersey-bean-validation/3.0.9/jersey-bean-validation-3.0.9.jar = 1685757999671
+/Users/shanecarr/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar = 1685757999670
+/Users/shanecarr/.m2/repository/org/hibernate/validator/hibernate-validator/7.0.5.Final/hibernate-validator-7.0.5.Final.jar = 1685757999704
+/Users/shanecarr/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar = 1685757999680
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-logging/4.0.0/dropwizard-logging-4.0.0.jar = 1685757999699
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-util/4.0.0/dropwizard-util-4.0.0.jar = 1685757999702
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-logback/4.2.18/metrics-logback-4.2.18.jar = 1685757999706
+/Users/shanecarr/.m2/repository/org/slf4j/jul-to-slf4j/2.0.7/jul-to-slf4j-2.0.7.jar = 1685757999722
+/Users/shanecarr/.m2/repository/ch/qos/logback/logback-core/1.4.6/logback-core-1.4.6.jar = 1685757999731
+/Users/shanecarr/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar = 1685757999722
+/Users/shanecarr/.m2/repository/io/dropwizard/logback/logback-throttling-appender/1.1.9/logback-throttling-appender-1.1.9.jar = 1672801686182
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-validation/4.0.0/dropwizard-validation-4.0.0.jar = 1685757999740
+/Users/shanecarr/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar = 1672801689824
+/Users/shanecarr/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar = 1671500504663
+/Users/shanecarr/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar = 1671500504522
+/Users/shanecarr/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar = 1671500504557
+/Users/shanecarr/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar = 1671500504603
+/Users/shanecarr/.m2/repository/org/glassfish/jakarta.el/4.0.2/jakarta.el-4.0.2.jar = 1685757999760
+/Users/shanecarr/.m2/repository/jakarta/el/jakarta.el-api/4.0.0/jakarta.el-api-4.0.0.jar = 1685757999756
+/Users/shanecarr/.m2/repository/com/azure/azure-cosmos/4.45.1/azure-cosmos-4.45.1.jar = 1685757999852
+/Users/shanecarr/.m2/repository/com/azure/azure-core/1.39.0/azure-core-1.39.0.jar = 1685757999776
+/Users/shanecarr/.m2/repository/com/azure/azure-json/1.0.1/azure-json-1.0.1.jar = 1685757999771
+/Users/shanecarr/.m2/repository/io/projectreactor/reactor-core/3.4.27/reactor-core-3.4.27.jar = 1685757999835
+/Users/shanecarr/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar = 1685757999787
+/Users/shanecarr/.m2/repository/com/azure/azure-core-http-netty/1.13.3/azure-core-http-netty-1.13.3.jar = 1685757999804
+/Users/shanecarr/.m2/repository/io/netty/netty-handler/4.1.89.Final/netty-handler-4.1.89.Final.jar = 1685757999814
+/Users/shanecarr/.m2/repository/io/netty/netty-common/4.1.89.Final/netty-common-4.1.89.Final.jar = 1685757999841
+/Users/shanecarr/.m2/repository/io/netty/netty-resolver/4.1.89.Final/netty-resolver-4.1.89.Final.jar = 1685757999851
+/Users/shanecarr/.m2/repository/io/netty/netty-transport/4.1.89.Final/netty-transport-4.1.89.Final.jar = 1685757999855
+/Users/shanecarr/.m2/repository/io/netty/netty-handler-proxy/4.1.89.Final/netty-handler-proxy-4.1.89.Final.jar = 1685757999867
+/Users/shanecarr/.m2/repository/io/netty/netty-codec-socks/4.1.89.Final/netty-codec-socks-4.1.89.Final.jar = 1685757999870
+/Users/shanecarr/.m2/repository/io/netty/netty-buffer/4.1.89.Final/netty-buffer-4.1.89.Final.jar = 1685757999874
+/Users/shanecarr/.m2/repository/io/netty/netty-codec/4.1.89.Final/netty-codec-4.1.89.Final.jar = 1685757999877
+/Users/shanecarr/.m2/repository/io/netty/netty-codec-http/4.1.89.Final/netty-codec-http-4.1.89.Final.jar = 1685757999883
+/Users/shanecarr/.m2/repository/io/netty/netty-codec-http2/4.1.89.Final/netty-codec-http2-4.1.89.Final.jar = 1685757999898
+/Users/shanecarr/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.89.Final/netty-transport-native-unix-common-4.1.89.Final.jar = 1685757999901
+/Users/shanecarr/.m2/repository/io/netty/netty-transport-native-epoll/4.1.89.Final/netty-transport-native-epoll-4.1.89.Final-linux-x86_64.jar = 1685757999899
+/Users/shanecarr/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.89.Final/netty-transport-classes-epoll-4.1.89.Final.jar = 1685757999912
+/Users/shanecarr/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.89.Final/netty-transport-native-kqueue-4.1.89.Final-osx-x86_64.jar = 1685757999905
+/Users/shanecarr/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.89.Final/netty-transport-classes-kqueue-4.1.89.Final.jar = 1685757999917
+/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final.jar = 1685757999921
+/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-classes/2.0.56.Final/netty-tcnative-classes-2.0.56.Final.jar = 1685757999938
+/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar = 1685757999974
+/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar = 1685757999956
+/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar = 1685757999954
+/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar = 1685757999966
+/Users/shanecarr/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar = 1685758000005
+/Users/shanecarr/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.0.28/reactor-netty-http-1.0.28.jar = 1685758000011
+/Users/shanecarr/.m2/repository/io/netty/netty-resolver-dns/4.1.89.Final/netty-resolver-dns-4.1.89.Final.jar = 1685757999997
+/Users/shanecarr/.m2/repository/io/netty/netty-codec-dns/4.1.89.Final/netty-codec-dns-4.1.89.Final.jar = 1685758000005
+/Users/shanecarr/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.89.Final/netty-resolver-dns-native-macos-4.1.89.Final-osx-x86_64.jar = 1685758000005
+/Users/shanecarr/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.89.Final/netty-resolver-dns-classes-macos-4.1.89.Final.jar = 1685758000031
+/Users/shanecarr/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.0.28/reactor-netty-core-1.0.28.jar = 1685758000035
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/module/jackson-module-afterburner/2.13.5/jackson-module-afterburner-2.13.5.jar = 1685758000031
+/Users/shanecarr/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar = 1671520414846
+/Users/shanecarr/.m2/repository/io/micrometer/micrometer-core/1.9.8/micrometer-core-1.9.8.jar = 1685758000043
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-jdbi3/4.0.0/dropwizard-jdbi3-4.0.0.jar = 1685758000055
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-db/4.0.0/dropwizard-db-4.0.0.jar = 1685758000052
+/Users/shanecarr/.m2/repository/org/apache/tomcat/tomcat-jdbc/10.1.7/tomcat-jdbc-10.1.7.jar = 1685758000056
+/Users/shanecarr/.m2/repository/org/apache/tomcat/tomcat-juli/10.1.7/tomcat-juli-10.1.7.jar = 1685758000053
+/Users/shanecarr/.m2/repository/org/jdbi/jdbi3-core/3.37.1/jdbi3-core-3.37.1.jar = 1685758000077
+/Users/shanecarr/.m2/repository/io/leangen/geantyref/geantyref/1.3.14/geantyref-1.3.14.jar = 1685758000092
+/Users/shanecarr/.m2/repository/org/jdbi/jdbi3-sqlobject/3.37.1/jdbi3-sqlobject-3.37.1.jar = 1685758000079
+/Users/shanecarr/.m2/repository/org/jdbi/jdbi3-guava/3.37.1/jdbi3-guava-3.37.1.jar = 1685758000078
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-jdbi3/4.2.18/metrics-jdbi3-4.2.18.jar = 1685758000078
+/Users/shanecarr/.m2/repository/org/liquibase/liquibase-core/4.8.0/liquibase-core-4.8.0.jar = 1685758000221
+/Users/shanecarr/.m2/repository/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar = 1685758000103
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-migrations/4.0.0/dropwizard-migrations-4.0.0.jar = 1685758000285
+/Users/shanecarr/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.jar = 1685758000298
+/Users/shanecarr/.m2/repository/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar = 1685758000317
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-client/4.0.0/dropwizard-client-4.0.0.jar = 1685758000313
+/Users/shanecarr/.m2/repository/org/glassfish/jersey/core/jersey-client/3.0.9/jersey-client-3.0.9.jar = 1685758000329
+/Users/shanecarr/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar = 1685758000346
+/Users/shanecarr/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar = 1685758000336
+/Users/shanecarr/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2.1/httpcore5-5.2.1.jar = 1685758000355
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-httpclient5/4.2.18/metrics-httpclient5-4.2.18.jar = 1685758000355
+/Users/shanecarr/.m2/repository/io/dropwizard/dropwizard-auth/4.0.0/dropwizard-auth-4.0.0.jar = 1685758000361
+/Users/shanecarr/.m2/repository/io/dropwizard/metrics/metrics-caffeine/4.2.18/metrics-caffeine-4.2.18.jar = 1685758000361
+/Users/shanecarr/.m2/repository/com/github/ben-manes/caffeine/caffeine/3.1.5/caffeine-3.1.5.jar = 1685758000418
+/Users/shanecarr/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.jar = 1685758000383
+/Users/shanecarr/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/3.0.9/jersey-container-servlet-core-3.0.9.jar = 1685758000385
+/Users/shanecarr/.m2/repository/org/glassfish/jersey/core/jersey-server/3.0.9/jersey-server-3.0.9.jar = 1685758000404
+/Users/shanecarr/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2.jar = 1685758000424
+/Users/shanecarr/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar = 1685758000429
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar = 1685758000433
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.14.2/jackson-dataformat-yaml-2.14.2.jar = 1685758000434
+/Users/shanecarr/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar = 1672801685843
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.14.2/jackson-datatype-guava-2.14.2.jar = 1685758000453
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/jakarta/rs/jackson-jakarta-rs-json-provider/2.14.2/jackson-jakarta-rs-json-provider-2.14.2.jar = 1685758000453
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/jakarta/rs/jackson-jakarta-rs-base/2.14.2/jackson-jakarta-rs-base-2.14.2.jar = 1685758000453
+/Users/shanecarr/.m2/repository/com/fasterxml/jackson/module/jackson-module-jakarta-xmlbind-annotations/2.14.2/jackson-module-jakarta-xmlbind-annotations-2.14.2.jar = 1685758000472
+/Users/shanecarr/.m2/repository/org/eclipse/jetty/jetty-io/11.0.14/jetty-io-11.0.14.jar = 1685758000475
+/Users/shanecarr/.m2/repository/jakarta/activation/jakarta.activation-api/2.0.1/jakarta.activation-api-2.0.1.jar = 1685758000524
+/Users/shanecarr/repo/redisexample/src/main/java/log4j2.xml = 1685756745311
+/Users/shanecarr/repo/redisexample/src/main/java = 1685756745311
+/Users/shanecarr/repo/redisexample/target/generated-sources/annotations = 1685769870178
+/Users/shanecarr/repo/redisexample/target/apidocs/tag-search-index.js = 1685770045892
+/Users/shanecarr/repo/redisexample/target/apidocs/overview-tree.html = 1685770045728
+/Users/shanecarr/repo/redisexample/target/apidocs/module-search-index.js = 1685770045867
+/Users/shanecarr/repo/redisexample/target/apidocs/index.html = 1685770045734
+/Users/shanecarr/repo/redisexample/target/apidocs/package-search-index.js = 1685770045888
+/Users/shanecarr/repo/redisexample/target/apidocs/jquery-ui.overrides.css = 1685770046016
+/Users/shanecarr/repo/redisexample/target/apidocs/index-all.html = 1685770045994
+/Users/shanecarr/repo/redisexample/target/apidocs/allpackages-index.html = 1685770045806
+/Users/shanecarr/repo/redisexample/target/apidocs/member-search-index.js = 1685770045891
+/Users/shanecarr/repo/redisexample/target/apidocs/script.js = 1685770046007
+/Users/shanecarr/repo/redisexample/target/apidocs/stylesheet.css = 1685770046005
+/Users/shanecarr/repo/redisexample/target/apidocs/overview-summary.html = 1685770045997
+/Users/shanecarr/repo/redisexample/target/apidocs/help-doc.html = 1685770046003
+/Users/shanecarr/repo/redisexample/target/apidocs/element-list = 1685770045467
+/Users/shanecarr/repo/redisexample/target/apidocs/allclasses-index.html = 1685770045794
+/Users/shanecarr/repo/redisexample/target/apidocs/type-search-index.js = 1685770045889
+/Users/shanecarr/repo/redisexample/target/apidocs/search.js = 1685770046009

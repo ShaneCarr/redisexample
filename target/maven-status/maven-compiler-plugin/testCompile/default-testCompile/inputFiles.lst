@@ -1,3 +1,6 @@
-/home/shane/repo/testStorage2/src/test/java/com/jersey/resources/db/AppTestExtension.java
-/home/shane/repo/testStorage2/src/test/java/com/jersey/resources/EmployeeResourceTest.java
-/home/shane/repo/testStorage2/src/test/java/com/jersey/resources/db/PostgresTestContainer.java
+/Users/shanecarr/repo/redisexample/src/test/java/com/jersey/resources/db/AppTestExtension.java
+/Users/shanecarr/repo/redisexample/src/test/java/com/jersey/resources/db/CosmosEmulatorContainer.java
+/Users/shanecarr/repo/redisexample/src/test/java/com/jersey/resources/EmployeeResourceTest.java
+/Users/shanecarr/repo/redisexample/src/test/java/com/jersey/resources/db/AppTestExtensionCosmos.java
+/Users/shanecarr/repo/redisexample/src/test/java/com/jersey/resources/EmployeeResourceCosmosTest.java
+/Users/shanecarr/repo/redisexample/src/test/java/com/jersey/resources/db/PostgresTestContainer.java

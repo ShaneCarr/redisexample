@@ -31,5 +31,5 @@ logging:
 cosmosdb:
   endpoint: your-cosmosdb-endpoint
   key: your-cosmosdb-key
-  databaseName: roster_database
-  containerName: roster_container
+  databaseName: your-database-name
+  containerName: your-container-name

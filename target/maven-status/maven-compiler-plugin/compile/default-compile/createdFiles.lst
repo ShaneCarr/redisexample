@@ -17,8 +17,8 @@ com/jersey/api/Audience/Audience.class
 com/jersey/auth/User.class
 com/jersey/config/ApplicationHealthCheck.class
 com/jersey/model/RosterItem.class
-com/jersey/App.class
 com/jersey/resources/APIController.class
 com/jersey/resources/HealthCheckController.class
+com/jersey/App.class
 com/jersey/auth/AppAuthorizer.class
 com/jersey/cosmos/CreateAudience.class

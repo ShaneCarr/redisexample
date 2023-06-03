@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.jersey.resources.EmployeeResourceTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.105 s <<< FAILURE! - in com.jersey.resources.EmployeeResourceTest
-com.jersey.resources.EmployeeResourceTest  Time elapsed: 5.101 s  <<< ERROR!
-java.lang.IllegalArgumentException: Illegal base64 character 2d
-	at com.jersey.resources.EmployeeResourceTest.setUp(EmployeeResourceTest.java:31)
-

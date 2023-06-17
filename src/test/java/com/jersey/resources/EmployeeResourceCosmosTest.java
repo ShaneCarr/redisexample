@@ -12,6 +12,7 @@ import jakarta.ws.rs.core.UriBuilder;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.RegisterExtension;
 
 import java.util.Objects;
 
@@ -20,26 +21,36 @@ import static org.junit.Assert.assertEquals;
 
 public class EmployeeResourceCosmosTest {
 
-
     private static final AppTestExtensionCosmos appTestExtension = new AppTestExtensionCosmos(
             Objects.requireNonNull(EmployeeResourceCosmosTest.class.getClassLoader().getResource("test.yml")).getPath()
     );
 
-    static public DropwizardAppExtension<ApplicationConfiguration> app = appTestExtension.getApp();
+    //static public DropwizardAppExtension<ApplicationConfiguration> app;
 
-    @BeforeAll
-    public static void setUp() throws Exception {
-       // app.beforeAll();
-        app.before();
-    }
 
-    @AfterAll
-    public static void tearDown() throws Exception {
-        app.after();
-    }
+//    static AppTestExtensionCosmos appTestExtension = new AppTestExtensionCosmos(
+//            Objects.requireNonNull(EmployeeResourceCosmosTest.class.getClassLoader().getResource("test.yml")).getPath()
+//    );
+
+    @RegisterExtension
+    static DropwizardAppExtension<ApplicationConfiguration> app = appTestExtension.getApp();
+
+//
+//    @BeforeAll
+//    public static void setUp() throws Exception {
+//       // app.beforeAll();
+//        app = appTestExtension.getApp();
+//        app.before();
+//    }
+//
+//    @AfterAll
+//    public static void tearDown() throws Exception {
+//        app.after();
+//    }
 
     @Test
     public void createEmployee() {
+
         Employee employee = new Employee(1, "John", "Doe", "john.doe@example.com");
         UriBuilder uri = UriBuilder.fromUri(format("http://localhost:%d" + "/employees", app.getLocalPort()));
         Response response = app.client().target(uri)
@@ -49,18 +60,4 @@ public class EmployeeResourceCosmosTest {
         assertEquals(Response.Status.CREATED.getStatusCode(), response.getStatus());
         assertEquals("/employees/1", response.getLocation().getPath());
     }
-
-//
-//    @Test
-//    public void getGroupMembers() {
-//        Employee employee = new Employee(1, "John", "Doe", "john.doe@example.com");
-//        UriBuilder uri = UriBuilder.fromUri(format("http://localhost:%d" + "/employees", app.getLocalPort()));
-//        Response response = app.client().target(uri)
-//                .request()
-//                .post(Entity.entity(employee, MediaType.APPLICATION_JSON_TYPE));
-//
-//        assertEquals(Response.Status.CREATED.getStatusCode(), response.getStatus());
-//        assertEquals("/employees/1", response.getLocation().getPath());
-//    }
-
 }

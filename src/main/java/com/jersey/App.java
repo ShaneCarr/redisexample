@@ -23,6 +23,8 @@ import io.dropwizard.core.Application;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
 import jakarta.ws.rs.client.Client;
+import liquibase.pro.packaged.ll;
+
 import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -59,16 +61,29 @@ public class App extends Application<ApplicationConfiguration> {
 
     LOGGER.info("Registering cosmos");
     // Create the CosmosClient using the configuration properties
-    CosmosClient cosmosClient = new CosmosClientBuilder()
-            .endpoint(c.getCosmosConfiguration().getEndpoint())
-            .key(c.getCosmosConfiguration().getKey())
-            .buildClient();
+    // CosmosClient cosmosClient = new CosmosClientBuilder()
+    //         .endpoint(c.getCosmosConfiguration().getEndpoint())
+    //         .key(c.getCosmosConfiguration().getKey())
+    //         .buildClient();
 
-    CosmosContainerFactory containerFactory = new CosmosContainerFactory(
-            cosmosClient,
-            c.getCosmosConfiguration().getDatabaseName(),
-            c.getCosmosConfiguration().getContainerName()
-    );
+    // CosmosContainerFactory containerFactory = new CosmosContainerFactory(
+    //         cosmosClient,
+    //         c.getCosmosConfiguration().getDatabaseName(),
+    //         c.getCosmosConfiguration().getContainerName()
+    // );
+
+    
+    // Create the CosmosClient using the configuration properties
+CosmosClient cosmosClient = new CosmosClientBuilder()
+        .endpoint(c.getCosmosConfiguration().getEndpoint()) // Use HTTP endpoint
+        .key(c.getCosmosConfiguration().getKey())
+        .buildClient();
+
+CosmosContainerFactory containerFactory = new CosmosContainerFactory(
+        cosmosClient,
+        c.getCosmosConfiguration().getDatabaseName(),
+        c.getCosmosConfiguration().getContainerName()
+);
 
     LOGGER.info("Registering REST resources");
     e.jersey().register(new EmployeeResource(e.getValidator(), new EmployeeRepository(containerFactory.createContainer())));

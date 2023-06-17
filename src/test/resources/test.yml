@@ -20,6 +20,15 @@ readWriteDatabase:
   validationQueryTimeout: 300
   readOnly: false
 
+readOnlyDatabase:
+  jdbcUrl: jdbc:postgresql://localhost/primary
+  maximumPoolSize: 1
+  connectionTimeout: 300
+  minimumIdle: 1
+  maxLifetime: 3600000
+  validationQueryTimeout: 300
+  readOnly: false
+
 logging:
   level: VERBOSE
   appenders:
@@ -29,7 +38,7 @@ logging:
     package com.jersey: INFO
 
 cosmosdb:
-  endpoint: your-cosmosdb-endpoint
-  key: your-cosmosdb-key
+  endpoint: https://localhost:8081
+  key: C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==
   databaseName: your-database-name
   containerName: your-container-name

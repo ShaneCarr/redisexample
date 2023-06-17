@@ -14,33 +14,38 @@ import org.junit.jupiter.api.extension.ExtensionContext;
 public class AppTestExtensionCosmos implements BeforeAllCallback, AfterAllCallback, BeforeEachCallback, AfterEachCallback {
 
   private final String configPath;
-  private final DropwizardAppExtension<ApplicationConfiguration> app;
+  private DropwizardAppExtension<ApplicationConfiguration> app;
 
-  private CosmosEmulatorContainer cosmosContainer;
+ // private CosmosEmulatorContainer cosmosContainer;
 
   public AppTestExtensionCosmos(String configPath) {
     this.configPath = configPath;
-    cosmosContainer = new CosmosEmulatorContainer();
-    cosmosContainer.start();
-    // Create and configure the DropwizardAppExtension with the necessary container-related overrides
-    // i loaded this from the container that i started. I don't really want to
-    // override the db name and container name
+   // cosmosContainer = new CosmosEmulatorContainer();
+   // cosmosContainer.start();
+
     app = new DropwizardAppExtension<>(com.jersey.App.class,
-            configPath,
-            ConfigOverride.config("cosmosdb.endpoint", cosmosContainer.getEmulatorEndpoint()),
-            ConfigOverride.config("cosmosdb.key", cosmosContainer.getEmulatorKey())
+            configPath//,
+        //    ConfigOverride.config("cosmosdb.endpoint", cosmosContainer.getEmulatorEndpoint()),
+       //     ConfigOverride.config("cosmosdb.key", cosmosContainer.getEmulatorKey())
     );
+
+       // app = new DropwizardAppExtension<>(com.jersey.App.class,
+        //    configPath//,
+      //      ConfigOverride.config("cosmosdb.endpoint", cosmosContainer.getEmulatorEndpoint()),
+        //    ConfigOverride.config("cosmosdb.key", cosmosContainer.getEmulatorKey())
+   // );
 
   }
 
   @Override
   public void beforeAll(ExtensionContext context) throws Exception {
-
+    app.before();
   }
 
   @Override
   public void afterAll(ExtensionContext context) throws Exception {
-    cosmosContainer.stop();
+    //cosmosContainer.stop();
+    app.afterAll(context);
   }
 
   @Override

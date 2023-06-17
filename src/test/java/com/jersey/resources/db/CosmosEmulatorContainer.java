@@ -1,3 +1,33 @@
+// package com.jersey.resources.db;
+
+// import org.testcontainers.containers.GenericContainer;
+
+// public class CosmosEmulatorContainer extends GenericContainer<CosmosEmulatorContainer> {
+
+//   private static final int EMULATOR_PORT = 8081;
+
+// private static final String EMULATOR_KEY = "eW91ci1jb3Ntb3NkYi1rZXk="; // Replace with your desired emulator key
+
+//   public CosmosEmulatorContainer() {
+//     super("mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator");
+//     addExposedPort(EMULATOR_PORT);
+
+//   }
+
+//   public String getEmulatorEndpoint() {
+//     return String.format("http://%s:%d", getHost(), getMappedPort(EMULATOR_PORT));
+//   }
+
+//   public String getEmulatorKey() {
+//     return EMULATOR_KEY;
+//   }
+
+
+//   @Override
+//   protected void configure() {
+//     withExposedPorts(EMULATOR_PORT);
+//   }
+// }
 package com.jersey.resources.db;
 
 import org.testcontainers.containers.GenericContainer;
@@ -6,40 +36,22 @@ public class CosmosEmulatorContainer extends GenericContainer<CosmosEmulatorCont
 
   private static final int EMULATOR_PORT = 8081;
 
-  private final String cosmosEndpoint;
-  private final String cosmosKey;
-//  private final String cosmosDatabaseName;
-//  private final String cosmosContainerName;
+  private static final String EMULATOR_KEY = "eW91ci1jb3Ntb3NkYi1rZXk="; // Replace with your desired emulator key
 
   public CosmosEmulatorContainer() {
     super("mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator");
     addExposedPort(EMULATOR_PORT);
-
-    // i need to override  the keys iwth these
-    this.cosmosEndpoint = this.getEmulatorEndpoint();
-    this.cosmosKey = this.getEmulatorKey();
-
-//    The setCommand() method in the Testcontainers library allows you to specify
-//    the command that will be executed when the container starts.
-//    It sets the command that is run inside the container's runtime environment.
-    setCommand("--enable-multiple-write-locations");
+    withEnv("AZURE_COSMOS_EMULATOR_ACCEPT_TERMS", "yes");
+   // withCommand("--no-ssl"); // Disable SSL for the emulator
   }
 
   public String getEmulatorEndpoint() {
-    return String.format("https://%s:%d", getHost(), getMappedPort(EMULATOR_PORT));
+    return String.format("http://%s:%d", getHost(), getMappedPort(EMULATOR_PORT));
   }
 
   public String getEmulatorKey() {
-    return cosmosKey;
+    return EMULATOR_KEY;
   }
-
-//  public String getEmulatorDatabaseName() {
-//    return cosmosDatabaseName;
-//  }
-//
-//  public String getEmulatorContainerName() {
-//    return cosmosContainerName;
-//  }
 
   @Override
   protected void configure() {

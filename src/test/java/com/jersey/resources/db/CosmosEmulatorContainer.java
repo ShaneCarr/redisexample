@@ -46,7 +46,8 @@ public class CosmosEmulatorContainer extends GenericContainer<CosmosEmulatorCont
   }
 
   public String getEmulatorEndpoint() {
-    return String.format("http://%s:%d", getHost(), getMappedPort(EMULATOR_PORT));
+    //return String.format("https://%s:%d", getHost(), getMappedPort(EMULATOR_PORT));
+      return String.format("https://%s:%d", getHost(), EMULATOR_PORT);
   }
 
   public String getEmulatorKey() {

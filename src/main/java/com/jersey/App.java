@@ -1,11 +1,13 @@
 package com.jersey;
-
+import com.azure.cosmos.models.CosmosContainerProperties;
+import com.azure.cosmos.models.ThroughputProperties;
 import com.azure.cosmos.CosmosClient;
 import com.azure.cosmos.CosmosContainer;
 import com.azure.cosmos.CosmosClientBuilder;
 //import com.azure.cosmos.CosmosContainerProperties;
 import com.azure.cosmos.CosmosDatabase;
-
+import com.azure.cosmos.models.CosmosContainerResponse;
+import com.azure.cosmos.models.ThroughputProperties;
 import com.jersey.auth.AppAuthorizer;
 import com.jersey.auth.AppBasicAuthenticator;
 import com.jersey.auth.User;
@@ -84,6 +86,20 @@ CosmosContainerFactory containerFactory = new CosmosContainerFactory(
         c.getCosmosConfiguration().getDatabaseName(),
         c.getCosmosConfiguration().getContainerName()
 );
+        ThroughputProperties throughputProperties = ThroughputProperties.createManualThroughput(400);
+cosmosClient.createDatabaseIfNotExists(c.getCosmosConfiguration().getDatabaseName(), throughputProperties);
+
+    CosmosDatabase database = cosmosClient.getDatabase(c.getCosmosConfiguration().getDatabaseName());
+    // Check if the database exists
+    if (database == null) {
+        LOGGER.error("Database '{}' does not exist.");
+        
+    }
+
+            CosmosContainerProperties containerProperties = new CosmosContainerProperties( c.getCosmosConfiguration().getDatabaseName(), "/partitionKey");
+        
+
+    CosmosContainerResponse response = database.createContainerIfNotExists(containerProperties, throughputProperties);
 
     LOGGER.info("Registering REST resources");
     e.jersey().register(new EmployeeResource(e.getValidator(), new EmployeeRepository(containerFactory.createContainer())));
@@ -113,3 +129,72 @@ CosmosContainerFactory containerFactory = new CosmosContainerFactory(
   }
 }
 
+
+/*
+ 
+
+
+
+# Change to the directory where you want to save the certificate
+cd /path/to/your/directory
+
+# Download the certificate with curl
+curl -k -o emulator.pem https://localhost:8081/_explorer/emulator.pem
+
+# Convert .pem to .crt
+openssl x509 -outform der -in emulator.pem -out emulator.crt
+
+# Add certificate to the trusted store (you will be asked for your password)
+sudo cp emulator.crt /usr/local/share/ca-certificates/
+sudo update-ca-certificates
+
+# Clean up the downloaded certificate file
+rm emulator.pem emulator.crt
+
+
+
+---------------------------------------------------------- you need to do this for windows
+
+@echo off
+
+REM Change to the directory where you want to save the certificate
+cd C:\Users\shcarr\Downloads
+
+REM Download the certificate with curl
+curl -k -o emulator.pem https://localhost:8081/_explorer/emulator.pem
+
+REM Import the certificate
+certutil -addstore -f "ROOT" emulator.pem
+
+REM Clean up the downloaded certificate file
+del emulator.pem
+
+
+java in windows *linux will be different
+
+@echo off
+
+:: Variables
+set CERT_URL=https://localhost:8081/_explorer/emulator.pem
+set CERT_FILE=emulator.pem
+set ALIAS=CosmosEmulator
+set JAVA_HOME=C:\Progra~1\Microsoft\jdk-17.0.2.8-hotspot
+set CACERTS_PATH=%JAVA_HOME%\lib\security\cacerts
+set STOREPASS=changeit
+
+:: Download the certificate using curl (ignoring SSL validation)
+curl -k -o %CERT_FILE% %CERT_URL%
+
+:: Import the certificate to the Java's cacerts truststore
+"%JAVA_HOME%\bin\keytool.exe" -import -trustcacerts -keystore "%CACERTS_PATH%" -storepass %STOREPASS% -noprompt -alias %ALIAS% -file %CERT_FILE%
+
+:: Delete the certificate file
+del %CERT_FILE%
+
+echo.
+echo Done!
+
+
+https://localhost:8081/_explorer/emulator.pem
+
+ */

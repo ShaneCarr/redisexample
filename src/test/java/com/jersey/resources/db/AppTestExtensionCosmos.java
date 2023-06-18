@@ -16,24 +16,18 @@ public class AppTestExtensionCosmos implements BeforeAllCallback, AfterAllCallba
   private final String configPath;
   private DropwizardAppExtension<ApplicationConfiguration> app;
 
- // private CosmosEmulatorContainer cosmosContainer;
+  private CosmosEmulatorContainer cosmosContainer;
 
   public AppTestExtensionCosmos(String configPath) {
     this.configPath = configPath;
-   // cosmosContainer = new CosmosEmulatorContainer();
-   // cosmosContainer.start();
-
+   cosmosContainer = new CosmosEmulatorContainer();
+   cosmosContainer.start();
+// https://localhost:57628/_explorer/index.html
     app = new DropwizardAppExtension<>(com.jersey.App.class,
-            configPath//,
-        //    ConfigOverride.config("cosmosdb.endpoint", cosmosContainer.getEmulatorEndpoint()),
-       //     ConfigOverride.config("cosmosdb.key", cosmosContainer.getEmulatorKey())
+            configPath,
+           ConfigOverride.config("cosmosdb.endpoint", cosmosContainer.getEmulatorEndpoint()),
+           ConfigOverride.config("cosmosdb.key", cosmosContainer.getEmulatorKey())
     );
-
-       // app = new DropwizardAppExtension<>(com.jersey.App.class,
-        //    configPath//,
-      //      ConfigOverride.config("cosmosdb.endpoint", cosmosContainer.getEmulatorEndpoint()),
-        //    ConfigOverride.config("cosmosdb.key", cosmosContainer.getEmulatorKey())
-   // );
 
   }
 
